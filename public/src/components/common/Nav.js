@@ -1,6 +1,7 @@
 import React from "react";
 import AppBar from 'material-ui/AppBar';
 import { Menu, Icon } from 'antd';
+import { browserHistory } from 'react-router';
 
 
 const SubMenu = Menu.SubMenu;
@@ -57,8 +58,8 @@ export default class Nav extends React.Component {
               mode="inline"
             >
             <SubMenu key="sub1" title={<span><Icon type="info" /><span>About</span></span>}>
-              <Menu.Item key="1">Bio</Menu.Item>
-              <Menu.Item key="2">Resume</Menu.Item>
+              <Menu.Item key="1"><a href="/#bio" >Bio</a></Menu.Item>
+              <Menu.Item key="2" ><a href="/resume" >Resume</a></Menu.Item>
             </SubMenu>
             <SubMenu key="sub2" title={<span><Icon type="mail" /><span>Contact</span></span>}>
               <Menu.Item key="3">Info</Menu.Item>
