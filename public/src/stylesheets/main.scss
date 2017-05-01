@@ -47,6 +47,23 @@
   background-size: cover;
 }
 
+.contact-image {
+  height: 225px;
+  width: 100%;
+  background-image: url('/media/la_night2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-image-mobile {
+  height: 225px;
+  width: 100%;
+  background-image: url('/media/la_night2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .new {
   font-weight: bold;
   color: #FAFAFA;

@@ -62,7 +62,7 @@ export default class Nav extends React.Component {
               <Menu.Item key="2" ><a href="/resume" >Resume</a></Menu.Item>
             </SubMenu>
             <SubMenu key="sub2" title={<span><Icon type="mail" /><span>Contact</span></span>}>
-              <Menu.Item key="3">Info</Menu.Item>
+              <Menu.Item key="3"><a href="/contact" >Info</a></Menu.Item>
             </SubMenu>
           </Menu>
         </div>

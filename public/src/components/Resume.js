@@ -15,6 +15,7 @@ export default class Resume extends React.Component {
           <div className="resume-image">
             <Nav />
           </div>
+          <img src="/media/resume.jpg" style={{ display: 'block', margin: '0 auto', width: '50%'}} />
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <div className="resume-image-mobile">
