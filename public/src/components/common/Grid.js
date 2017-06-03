@@ -19,22 +19,16 @@ const styles = {
 const tilesData = [
   {
     img: '../../media/screenshot_emkr.png',
-    title: 'Development & Design',
   }, {
     img: '../../media/screenshot_bookmarc.png',
-    title: 'Content',
   }, {
     img: '../../media/screenshot_other.jpg',
-    title: 'Development & Design',
   }, {
     img: '../../media/screenshot_calendonian.png',
-    title: 'Content & Search Marketing',
   }, {
     img: '../../media/screenshot_tripific.jpg',
-    title: 'Development & Design',
   }, {
     img: '../../media/screenshot_slot.jpg',
-    title: 'Development & Design',
   }
 ]
 
@@ -132,7 +126,6 @@ export class Grid extends React.Component {
           {tilesData.map((tile, idx) => (
             <GridTile
               key={tile.img}
-              title={tile.title}
               onClick={this.showModal.bind(this, idx)}
             >
               <img src={tile.img} />
