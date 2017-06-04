@@ -1,7 +1,7 @@
 .main-image {
   height: 225px;
   width: 100%;
-  background-image: url('/media/palmtrees.png');
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1496534237/palmtrees.png');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -10,13 +10,13 @@
 .main-image-mobile {
   height: 225px;
   width: 100%;
-  background-image: url('/media/palmtrees.png');
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1496534237/palmtrees.png');
   background-attachment: fixed;
   background-size: cover;
 }
 
 .second-image {
-  background-image: url('/media/weho.jpg');
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1496534243/weho.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -24,7 +24,7 @@
 }
 
 .second-image-mobile {
-  background-image: url('/media/weho.jpg');
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1496534243/weho.jpg');
   background-attachment: fixed;
   background-size: cover;
   padding-top: 15%;

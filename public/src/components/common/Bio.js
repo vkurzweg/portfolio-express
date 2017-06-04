@@ -1,4 +1,6 @@
 import React from "react";
+import { Image } from 'cloudinary-react';
+
 
 export class Bio extends React.Component {
 
@@ -8,7 +10,7 @@ export class Bio extends React.Component {
     return (
       <div id="bio" style={{ width: '100%', backgroundColor: '#212121', color: '#FAFAFA', textAlign: 'center', fontSize: '16px' }}>
         <div style={{ display: 'inline-flex', width: '100%' }}>
-          <img src="/media/profile.jpg" alt="Victoria Kurzweg" style={{ height: '250px', marginTop: '2%', marginBottom: '2%', marginLeft: '5%'}} />
+          <Image cloudName="kurzweg" publicId="profile" quality="auto" responsive alt="Victoria Kurzweg" style={{ height: '250px', marginTop: '2%', marginBottom: '2%', marginLeft: '5%'}} />
           <div style={{ marginTop: '6%', marginLeft: '3%', width: '100%' }}>
             <p style={{ fontSize: '14px', textAlign: 'left', marginRight: '5%', marginBottom: '2%' }}>Hello I'm Victoria Kurzweg, a web developer and designer based in West Hollywood.</p>
             <p style={{ fontSize: '14px', textAlign: 'left', marginRight: '5%', marginBottom: '2%' }}>Before pivoting to tech in 2016, I worked in sales, international search marketing, journalism and public affairs. <a href="/resume" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>Here's my resume.</a></p>

@@ -1,6 +1,9 @@
 import React from "react";
 import {GridList, GridTile} from 'material-ui/GridList';
-import { Modal, Carousel } from 'antd';
+import Modal from 'antd/lib/modal';
+import Carousel from 'antd/lib/carousel';
+import { Image } from 'cloudinary-react';
+
 
 const styles = {
   root: {
@@ -18,17 +21,17 @@ const styles = {
 
 const tilesData = [
   {
-    img: '../../media/screenshot_emkr.png',
+    img: 'screenshot_emkr',
   }, {
-    img: '../../media/screenshot_bookmarc.png',
+    img: 'screenshot_bookmarc',
   }, {
-    img: '../../media/screenshot_other.jpg',
+    img: 'screenshot_other',
   }, {
-    img: '../../media/screenshot_calendonian.png',
+    img: 'screenshot_calendonian',
   }, {
-    img: '../../media/screenshot_tripific.jpg',
+    img: 'screenshot_tripific',
   }, {
-    img: '../../media/screenshot_slot.jpg',
+    img: 'screenshot_slot',
   }
 ]
 
@@ -128,16 +131,16 @@ export class Grid extends React.Component {
               key={tile.img}
               onClick={this.showModal.bind(this, idx)}
             >
-              <img src={tile.img} />
+              <Image cloudName="kurzweg" publicId={tile.img} width="400" quality="auto" responsive />
             </GridTile>
           ))}
         </GridList>
         <Modal title="Eventmakr" visible={this.state.visible0} footer={null} onCancel={this.closeModal0}>
           <Carousel vertical="true">
-            <div><img src="../../media/screenshot_emkr.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/screenshot_emkr2.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/screenshot_emkr3.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/screenshot_emkr4.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_emkr" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_emkr2" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_emkr3" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_emkr4" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
           </Carousel>
           <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Bringing an early-stage startup from idea to <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>product</a></em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
@@ -155,10 +158,10 @@ export class Grid extends React.Component {
           style={{ height: '75%', width: '50%'}}
         >
           <Carousel vertical="true">
-            <div><img src="../../media/screenshot_bookmarc.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/screenshot_bookmarc2.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/screenshot_bookmarc3.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/screenshot_bookmarc4.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc2" width="400" quality="auto" responsive  style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc3" width="400" quality="auto" responsive  style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc4" width="400" quality="auto" responsive  style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
           </Carousel>
           <p style={{ marginTop: '3%' }}><em>Building digital presence and brand awareness for a fashion company’s lifestyle brand.</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Strategy + Branding + Content</p>
@@ -171,9 +174,9 @@ export class Grid extends React.Component {
         </Modal>
         <Modal title="The Other" visible={this.state.visible2} footer={null} onCancel={this.closeModal2}>
           <Carousel vertical="true">
-            <div><img src="../../media/screenshot_other.jpg" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/screenshot_other2.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/other_sitemap.jpg" style={{ display: 'block', margin: '0 auto', height: '200px', width: '90%'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_other" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="other_sitemap" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px', width: '90%'}} /></div>
           </Carousel>
           <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Building a <a href="http://the-other.herokuapp.com/#/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>digital art gallery</a> in one week</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
@@ -183,11 +186,11 @@ export class Grid extends React.Component {
             <li>Integrated a <b>responsive CSS</b> mosaic grid and hover effects</li>
           </ul>
         </Modal>
-        <Modal title="Hilton Worldwide EMEA" visible={this.state.visible4} footer={null} onCancel={this.closeModal4}>
+        <Modal title="Hilton Worldwide EMEA" visible={this.state.visible3} footer={null} onCancel={this.closeModal3}>
           <Carousel vertical="true">
-            <div><img src="../../media/screenshot_other.jpg" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/screenshot_other2.png" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><img src="../../media/other_sitemap.jpg" style={{ display: 'block', margin: '0 auto', height: '200px', width: '90%'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_other" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="other_sitemap" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px', width: '90%'}} /></div>
           </Carousel>
           <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Building a <a href="http://the-other.herokuapp.com/#/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>digital art gallery</a> in one week</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
