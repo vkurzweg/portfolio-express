@@ -135,7 +135,7 @@ export class Grid extends React.Component {
             </GridTile>
           ))}
         </GridList>
-        <Modal title="Eventmakr" visible={this.state.visible0} footer={null} onCancel={this.closeModal0}>
+        <Modal title="Eventmakr" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
           <Carousel vertical="true">
             <div><Image cloudName="kurzweg" publicId="screenshot_emkr" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_emkr2" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
@@ -155,7 +155,7 @@ export class Grid extends React.Component {
           visible={this.state.visible1}
           footer={null}
           onCancel={this.closeModal1}
-          style={{ height: '75%', width: '50%'}}
+          style={{ height: '75%', width: '50%', top: 50 }}
         >
           <Carousel vertical="true">
             <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
@@ -172,7 +172,7 @@ export class Grid extends React.Component {
             <li>Edited the brand's first print catalog, including <b>art direction and copywriting</b></li>
           </ul>
         </Modal>
-        <Modal title="The Other" visible={this.state.visible2} footer={null} onCancel={this.closeModal2}>
+        <Modal title="The Other" visible={this.state.visible2} footer={null} onCancel={this.closeModal2} style={{ top: 50 }}>
           <Carousel vertical="true">
             <div><Image cloudName="kurzweg" publicId="screenshot_other" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
@@ -186,7 +186,7 @@ export class Grid extends React.Component {
             <li>Integrated a <b>responsive CSS</b> mosaic grid and hover effects</li>
           </ul>
         </Modal>
-        <Modal title="Hilton Worldwide EMEA" visible={this.state.visible3} footer={null} onCancel={this.closeModal3}>
+        <Modal title="Hilton Worldwide EMEA" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
           <Carousel vertical="true">
             <div><Image cloudName="kurzweg" publicId="screenshot_other" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
