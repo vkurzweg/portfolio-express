@@ -1,5 +1,6 @@
 import React from "react";
-import { Steps, Icon } from 'antd';
+import Steps from 'antd/lib/steps';
+import Icon from 'antd/lib/icon';
 const Step = Steps.Step;
 
 export class Dev extends React.Component {

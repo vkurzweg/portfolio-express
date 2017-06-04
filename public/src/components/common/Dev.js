@@ -1,5 +1,9 @@
 import React from "react";
-import { Steps, Icon, Button, message, Timeline } from 'antd';
+import Steps from 'antd/lib/steps';
+import Icon from 'antd/lib/icon';
+import Button from 'antd/lib/button';
+import message from 'antd/lib/message';
+import Timeline from 'antd/lib/timeline';
 
 const Step = Steps.Step;
 

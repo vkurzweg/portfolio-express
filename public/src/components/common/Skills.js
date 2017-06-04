@@ -2,7 +2,7 @@ import React from "react";
 import Dev from './Dev';
 import Design from './Design';
 import Content from './Content';
-import { Carousel } from 'antd';
+import { Carousel } from 'antd/lib/carousel';
 
 
 export class Skills extends React.Component {
