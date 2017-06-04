@@ -4,6 +4,8 @@ import Icon from 'antd/lib/icon';
 import Button from 'antd/lib/button';
 import message from 'antd/lib/message';
 import Timeline from 'antd/lib/timeline';
+import { Image } from 'cloudinary-react';
+
 
 const Step = Steps.Step;
 
@@ -14,7 +16,7 @@ const steps = [{
       <div className="row" style={{ display: 'inline-flex' }}>
         <div className="col-sm-6">
           <p style={{ textAlign: 'center', marginTop: '1%', marginBottom: '2%'}}><b>Responsive websites and applications</b> built with:</p>
-          <img src="/media/logos.png" style={{ display: 'block', margin: '0 auto', marginRight: '5%', height: '150px' }} />
+          <Image cloudName="kurzweg" publicId="logos" quality="auto" responsive style={{ display: 'block', margin: '0 auto', marginRight: '5%', height: '150px' }} />
         </div>
         <div className="col-sm-6" style={{ marginLeft: '3%', width: '250px' }}>
           <p style={{ marginTop: '1%' }}><b>Featuring:</b></p>
