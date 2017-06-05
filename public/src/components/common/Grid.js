@@ -21,6 +21,8 @@ const styles = {
 
 const tilesData = [
   {
+    img: 'screenshot_aloha',
+  }, {
     img: 'screenshot_emkr',
   }, {
     img: 'screenshot_bookmarc',
@@ -28,10 +30,6 @@ const tilesData = [
     img: 'screenshot_other',
   }, {
     img: 'screenshot_calendonian',
-  }, {
-    img: 'screenshot_tripific',
-  }, {
-    img: 'screenshot_slot',
   }
 ]
 
@@ -137,6 +135,21 @@ export class Grid extends React.Component {
         </GridList>
         <Modal title="Eventmakr" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
           <Carousel vertical="true">
+            <div><Image cloudName="kurzweg" publicId="screenshot_aloha" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_aloha4" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_aloha3" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+            <div><Image cloudName="kurzweg" publicId="screenshot_aloha2" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
+          </Carousel>
+          <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Bringing an early-stage startup from idea to <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>product</a></em></p>
+          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
+          <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
+            <li><b>Designed and built landing pages and MVP app</b> for Eventmakr, an early-stage startup in Santa Monica </li>
+            <li><b>Led wireframing, prototyping, and UI design</b> during minimum viable product development</li>
+            <li>Co-developed a <b>responsive React + Redux application</b> with search, chat, and payment features</li>
+          </ul>
+        </Modal>
+        <Modal title="Eventmakr" visible={this.state.visible1} footer={null} onCancel={this.closeModal1} style={{ top: 50 }}>
+          <Carousel vertical="true">
             <div><Image cloudName="kurzweg" publicId="screenshot_emkr" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_emkr2" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_emkr3" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
@@ -152,9 +165,9 @@ export class Grid extends React.Component {
         </Modal>
         <Modal
           title="Marc Jacobs"
-          visible={this.state.visible1}
+          visible={this.state.visible2}
           footer={null}
-          onCancel={this.closeModal1}
+          onCancel={this.closeModal2}
           style={{ height: '75%', width: '50%', top: 50 }}
         >
           <Carousel vertical="true">
@@ -172,7 +185,7 @@ export class Grid extends React.Component {
             <li>Edited the brand's first print catalog, including <b>art direction and copywriting</b></li>
           </ul>
         </Modal>
-        <Modal title="The Other" visible={this.state.visible2} footer={null} onCancel={this.closeModal2} style={{ top: 50 }}>
+        <Modal title="The Other" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
           <Carousel vertical="true">
             <div><Image cloudName="kurzweg" publicId="screenshot_other" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
@@ -186,7 +199,7 @@ export class Grid extends React.Component {
             <li>Integrated a <b>responsive CSS</b> mosaic grid and hover effects</li>
           </ul>
         </Modal>
-        <Modal title="Hilton Worldwide EMEA" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
+        <Modal title="Hilton Worldwide EMEA" visible={this.state.visible4} footer={null} onCancel={this.closeModal4} style={{ top: 50 }}>
           <Carousel vertical="true">
             <div><Image cloudName="kurzweg" publicId="screenshot_other" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
