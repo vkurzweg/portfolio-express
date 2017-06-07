@@ -1,7 +1,7 @@
 import React from "react";
 import TextCarousel from 'react-text-carousel';
 
-const phrases = ['web development', 'UX/UI design', 'search engine optimization', 'content strategy']
+const phrases = ['Custom, on-brand website design + development', 'Optimization + engagement across devices', 'Professional editing + content enhancement', 'Thoughtful UIs + seamless UX', 'Application of modern technologies + design principles']
 const interval = 3000;
 
 export class CopyCarousel extends React.Component {
@@ -12,11 +12,9 @@ export class CopyCarousel extends React.Component {
     return (
       <div style={{ display: 'block', width: '100%', margin: '0 auto', fontFamily: 'Share', textAlign: 'center', fontSize: '18px', marginTop: '3%' }}>
         <div style={{ display: 'inline-flex' }}>
-          <p>Victoria does&nbsp;</p>
           <span style={{ fontWeight: 'bold' }}>
             <TextCarousel phrases={phrases} interval={interval} />
           </span>
-          <p>in Los Angeles</p>
         </div>
       </div>
     );
@@ -25,3 +23,5 @@ export class CopyCarousel extends React.Component {
 }
 
 export default CopyCarousel;
+
+// const phrases = ['Custom, on-brand website design and development.', 'Effective optimization and engagement across devices.', 'Professional editing and content enhancement.', 'Thoughtful UIs.', 'Seamless UX.', 'Inspired application of modern technologies and design principles.']
