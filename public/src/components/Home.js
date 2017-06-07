@@ -3,8 +3,10 @@ import Nav from './common/Nav';
 import NavMobile from './common/NavMobile';
 import CopyCarousel from './common/CopyCarousel';
 import Dev from './common/Dev';
+import DevMobile from './common/DevMobile';
 import Grid from './common/Grid';
 import Intro from './common/Intro';
+import IntroMobile from './common/IntroMobile';
 import Bio from './common/Bio';
 import MediaQuery from 'react-responsive';
 import Intro2 from './common/Intro2';
@@ -38,10 +40,11 @@ export class Home extends React.Component {
           <div style={{ padding: '1%' }}>
             <Grid />
           </div>
-          <Intro />
+          <IntroMobile />
           <div className="second-image-mobile">
-            <Dev />
+            <DevMobile />
           </div>
+          <Bio />
         </MediaQuery>
       </div>
     );
