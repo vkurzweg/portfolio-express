@@ -133,19 +133,19 @@ export class Grid extends React.Component {
             </GridTile>
           ))}
         </GridList>
-        <Modal title="Eventmakr" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
+        <Modal title="Aloha Brothers" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
           <Carousel vertical="true">
             <div><Image cloudName="kurzweg" publicId="screenshot_aloha" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_aloha4" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_aloha3" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_aloha2" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
           </Carousel>
-          <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Bringing an early-stage startup from idea to <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>product</a></em></p>
+          <p style={{ textAlign: 'center', marginTop: '3%' }}><em></em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Designed and built landing pages and MVP app</b> for Eventmakr, an early-stage startup in Santa Monica </li>
-            <li><b>Led wireframing, prototyping, and UI design</b> during minimum viable product development</li>
-            <li>Co-developed a <b>responsive React + Redux application</b> with search, chat, and payment features</li>
+            <li><b>copy</b></li>
+            <li><b>copy</b></li>
+            <li><b>copy</b></li>
           </ul>
         </Modal>
         <Modal title="Eventmakr" visible={this.state.visible1} footer={null} onCancel={this.closeModal1} style={{ top: 50 }}>
