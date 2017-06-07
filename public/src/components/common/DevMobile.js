@@ -13,8 +13,8 @@ const steps = [{
   title: 'Design',
   content:
     <div>
-      <p style={{ fontSize: '14px' }}>Wireframes, Prototypes & Responsive User Interfaces</p>
-      <div className="container" style={{ lineHeight: '200%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%', width: '100%'}}>
+      <p style={{ fontSize: '14px' }}><b>Wireframes, Prototypes & Responsive User Interfaces</b></p>
+      <div className="container" style={{ lineHeight: '200%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%'}}>
         <div className="row">
           <div style={{ padding: '1%' }}>
             <img src="/media/responsive_blue.png" style={{ marginBottom: '5%'}} />
@@ -77,7 +77,7 @@ export class Dev extends React.Component {
   render() {
     const { current } = this.state;
     return (
-      <div style={{ display: 'block', margin: '0 auto', width: '100%', backgroundColor: '#FFFFFF' }}>
+      <div style={{ display: 'block', margin: '0 auto', backgroundColor: '#FFFFFF' }}>
         <Steps current={current} style={{ paddingTop: '3%', width: '95%', margin: '0 auto', backgroundColor: '#FFFFFF' }}>
           <Step style={{ margin: '0 auto' }} title="Design" icon={<Icon type="desktop" />} />
           <Step style={{ margin: '0 auto' }} title="Code" icon={<Icon type="code-o" />} />
