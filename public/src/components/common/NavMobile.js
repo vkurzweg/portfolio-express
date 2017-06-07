@@ -46,7 +46,7 @@ export default class Nav extends React.Component {
             style={{ width: '100%', backgroundColor: '#212121' }}
             onLeftIconButtonTouchTap={this.toggleMenu}
             iconElementRight={github}
-            iconStyleRight={{ marginTop: '2%', marginRight: '1.5%'}}
+            iconStyleRight={{ marginTop: '5%', marginRight: '1.5%'}}
             onRightIconButtonTouchTap={this.handleGitTap}
           />
         <div style={{ display }}>

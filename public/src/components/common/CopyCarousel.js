@@ -1,8 +1,8 @@
 import React from "react";
 import TextCarousel from 'react-text-carousel';
 
-const phrases = ['Custom, on-brand web design + development', 'Optimization + engagement across devices', 'Professional editing + content enhancement', 'Thoughtful UIs + seamless UX', 'Application of modern technologies + design principles']
-const interval = 2000;
+const phrases = ['Custom web design + development', 'Optimization + engagement across devices', 'On-brand content enhancement', 'Thoughtful UIs', 'Modern technologies + design patterns' ]
+const interval = 2500;
 
 export class CopyCarousel extends React.Component {
 

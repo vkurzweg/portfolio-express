@@ -35,10 +35,12 @@ export class Home extends React.Component {
             <NavMobile />
           </div>
           <CopyCarousel />
-          <Grid />
+          <div style={{ padding: '1%' }}>
+            <Grid />
+          </div>
           <Intro />
           <div className="second-image-mobile">
-          <Dev />
+            <Dev />
           </div>
         </MediaQuery>
       </div>
