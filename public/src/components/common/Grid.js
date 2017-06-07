@@ -158,7 +158,7 @@ export class Grid extends React.Component {
           <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Bringing an early-stage startup from idea to <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>product</a></em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Designed and built landing pages and MVP app</b> for Eventmakr, an early-stage startup in Santa Monica </li>
+            <li><b>Designed + built landing pages</b> for Eventmakr, an early-stage startup in Santa Monica </li>
             <li><b>Led wireframing, prototyping, and UI design</b> during minimum viable product development</li>
             <li>Co-developed a <b>responsive React + Redux application</b> with search, chat, and payment features</li>
           </ul>

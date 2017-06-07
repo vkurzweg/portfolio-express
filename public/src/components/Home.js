@@ -7,6 +7,7 @@ import Grid from './common/Grid';
 import Intro from './common/Intro';
 import Bio from './common/Bio';
 import MediaQuery from 'react-responsive';
+import Intro2 from './common/Intro2';
 
 
 
@@ -23,7 +24,7 @@ export class Home extends React.Component {
           </div>
           <CopyCarousel />
           <Grid />
-          <Intro />
+          <Intro2 />
           <div className="second-image">
           <Dev />
           </div>
