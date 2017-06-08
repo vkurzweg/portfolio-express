@@ -8,7 +8,7 @@ export class Intro extends React.Component {
 
     return (
       <div style={{ backgroundColor: '#212121', color: '#FAFAFA', padding: '7%', marginTop: '3%', textAlign: 'center', fontSize: '12px' }}>
-        <p style={{ textTransform: 'uppercase', letterSpacing: '3px' }}>your new digital presence</p>
+        <p style={{ textTransform: 'uppercase', letterSpacing: '3px' }}>build your digital presence</p>
       </div>
     );
 
