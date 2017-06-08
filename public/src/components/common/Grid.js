@@ -3,7 +3,13 @@ import {GridList, GridTile} from 'material-ui/GridList';
 import Modal from 'antd/lib/modal';
 import Carousel from 'antd/lib/carousel';
 import { Image } from 'cloudinary-react';
+import styled from 'styled-components';
 
+const StyledGridTile = styled(GridTile)`
+  &:hover {
+    outline-style: outset;
+  }
+`;
 
 const styles = {
   root: {
@@ -126,12 +132,12 @@ export class Grid extends React.Component {
       <div style={styles.root}>
         <GridList style={styles.gridList} cols={2.2}>
           {tilesData.map((tile, idx) => (
-            <GridTile
+            <StyledGridTile
               key={tile.img}
               onClick={this.showModal.bind(this, idx)}
             >
               <Image cloudName="kurzweg" publicId={tile.img} width="400" quality="auto" responsive />
-            </GridTile>
+            </StyledGridTile>
           ))}
         </GridList>
         <Modal title="Aloha Brothers" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
