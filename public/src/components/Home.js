@@ -10,6 +10,8 @@ import IntroMobile from './common/IntroMobile';
 import Bio from './common/Bio';
 import MediaQuery from 'react-responsive';
 import Intro2 from './common/Intro2';
+import Intro2Mobile from './common/Intro2Mobile';
+import Intro3Mobile from './common/Intro3Mobile';
 import { Image } from 'cloudinary-react';
 
 
@@ -27,20 +29,25 @@ export class Home extends React.Component {
           </div>
           <CopyCarousel />
           <Grid />
-          <Intro2 />
+          <Intro />
           <div className="second-image">
           <Dev />
+          <Intro2 />
           </div>
           <Bio />
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <NavMobile />
           <Image cloudName="kurzweg" publicId="palmtrees" quality="auto" responsive style={{ width: '100%' }} />
-          <CopyCarousel />
+          <div style={{ padding: '2%' }}>
+            <CopyCarousel />
+          </div>
           <Grid />
           <IntroMobile />
-          <Image cloudName="kurzweg" publicId="weho" quality="auto" responsive style={{ width: '100%' }} />
           <DevMobile />
+          <Intro2Mobile />
+          <Image cloudName="kurzweg" publicId="weho" quality="auto" responsive style={{ width: '100%' }} />
+          <Intro3Mobile />
           <Bio />
         </MediaQuery>
       </div>

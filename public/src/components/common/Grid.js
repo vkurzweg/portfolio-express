@@ -16,6 +16,7 @@ const styles = {
     display: 'flex',
     flexWrap: 'nowrap',
     overflowX: 'auto',
+    marginBottom: '1%'
   },
 };
 

@@ -7,8 +7,8 @@ export class Intro extends React.Component {
   render() {
 
     return (
-      <div style={{ backgroundColor: '#212121', color: '#FAFAFA', padding: '7%', marginTop: '3%', textAlign: 'center', fontSize: '12px' }}>
-        <p style={{ textTransform: 'uppercase', letterSpacing: '3px' }}>your new digital presence</p>
+      <div style={{ backgroundColor: '#212121', color: '#FAFAFA', padding: '7%', marginTop: '-2%', textAlign: 'center', fontSize: '12px' }}>
+        <p style={{ textTransform: 'uppercase', letterSpacing: '3px' }}>Meet victoria</p>
       </div>
     );
 

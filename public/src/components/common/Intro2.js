@@ -7,7 +7,7 @@ export class Intro extends React.Component {
   render() {
 
     return (
-      <div style={{ backgroundColor: '#212121', color: '#FAFAFA', padding: '5%', marginTop: '3%', textAlign: 'center', fontSize: '18px' }}>
+      <div style={{ backgroundColor: '#212121', color: '#FAFAFA', padding: '5%', marginTop: '3%', textAlign: 'center', fontSize: '14px' }}>
         <p style={{ textTransform: 'uppercase', letterSpacing: '3px' }}>iterate + iterate + iterate</p>
       </div>
     );

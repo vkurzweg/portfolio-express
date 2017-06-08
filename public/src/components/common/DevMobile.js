@@ -17,7 +17,7 @@ const steps = [{
       <div className="container" style={{ lineHeight: '200%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%'}}>
         <div className="row">
           <div style={{ padding: '1%' }}>
-            <img src="/media/responsive_blue.png" style={{ marginBottom: '5%'}} />
+            <img src="/media/responsive_blue.png" style={{ marginBottom: '1%'}} />
             <ul>
               <li>Professional design research and competitive analysis</li>
               <li>Mobile-first wireframing and prototyping</li>
@@ -78,7 +78,7 @@ export class Dev extends React.Component {
     const { current } = this.state;
     return (
       <div style={{ display: 'block', margin: '0 auto', backgroundColor: '#FFFFFF' }}>
-        <Steps current={current} style={{ paddingTop: '3%', width: '95%', margin: '0 auto', backgroundColor: '#FFFFFF' }}>
+        <Steps current={current} style={{ paddingTop: '10%', paddingBottom: '4%', width: '90%', margin: '0 auto', backgroundColor: '#FFFFFF' }}>
           <Step style={{ margin: '0 auto' }} title="Design" icon={<Icon type="desktop" />} />
           <Step style={{ margin: '0 auto' }} title="Code" icon={<Icon type="code-o" />} />
           <Step style={{ margin: '0 auto' }} title="Content" icon={<Icon type="edit" />} />
