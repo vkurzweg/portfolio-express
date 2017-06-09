@@ -8,6 +8,7 @@ import styled from 'styled-components';
 const StyledGridTile = styled(GridTile)`
   &:hover {
     outline-style: outset;
+    outline-color: #108EE9;
   }
 `;
 
