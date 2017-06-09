@@ -17,6 +17,19 @@ import { Image } from 'cloudinary-react';
 
 
 export class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isFormActive: false,
+    };
+    this.toggleForm = this.toggleForm.bind(this);
+  }
+
+  toggleForm() {
+    this.setState((prevState) => {
+      return { isFormActive: !prevState.isFormActive };
+    });
+  }
 
   // render
   render() {
@@ -35,7 +48,10 @@ export class Home extends React.Component {
           <Intro2 />
           </div>
           <div className="third-image">
-            <Bio />
+            <Bio
+              toggleForm={this.toggleForm}
+              isFormActive={this.state.isFormActive}
+            />
           </div>
         </MediaQuery>
         <MediaQuery maxWidth={767}>
@@ -49,7 +65,10 @@ export class Home extends React.Component {
           <DevMobile />
           <Intro2Mobile />
           <Image cloudName="kurzweg" publicId="weho" quality="auto" responsive style={{ width: '100%' }} />
-          <Bio />
+          <Bio
+            toggleForm={this.toggleForm}
+            isFormActive={this.state.isFormActive}
+          />
         </MediaQuery>
       </div>
     );
