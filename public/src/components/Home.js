@@ -34,7 +34,9 @@ export class Home extends React.Component {
           <Dev />
           <Intro2 />
           </div>
-          <Bio />
+          <div className="third-image">
+            <Bio />
+          </div>
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <NavMobile />
@@ -47,7 +49,6 @@ export class Home extends React.Component {
           <DevMobile />
           <Intro2Mobile />
           <Image cloudName="kurzweg" publicId="weho" quality="auto" responsive style={{ width: '100%' }} />
-          <Intro3Mobile />
           <Bio />
         </MediaQuery>
       </div>
