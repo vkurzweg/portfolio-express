@@ -148,8 +148,8 @@ export class Grid extends React.Component {
             <div><Image cloudName="kurzweg" publicId="screenshot_aloha3" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_aloha2" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
           </Carousel>
-          <p style={{ textAlign: 'center', marginTop: '3%' }}><em></em></p>
-          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
+          <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Relaunching a surf company's <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>website</a> with a fresh look and feel</em></p>
+          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Design + Development + SEO</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
             <li><b>copy</b></li>
             <li><b>copy</b></li>
@@ -184,7 +184,7 @@ export class Grid extends React.Component {
             <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc3" width="400" quality="auto" responsive  style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc4" width="400" quality="auto" responsive  style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
           </Carousel>
-          <p style={{ marginTop: '3%' }}><em>Building digital presence and brand awareness for a fashion company’s lifestyle brand.</em></p>
+          <p style={{ marginTop: '3%' }}><em>Building digital presence and brand awareness for a fashion company’s lifestyle brand</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Strategy + Branding + Content</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
             <li><b>Expanded digital presence</b> of Bookmarc, an LA-based lifestyle brand owned by fashion company Marc Jacobs</li>
