@@ -151,9 +151,9 @@ export class Grid extends React.Component {
           <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Relaunching a surf company's <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>website</a> with a fresh look and feel</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Design + Development + SEO</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>copy</b></li>
-            <li><b>copy</b></li>
-            <li><b>copy</b></li>
+            <li><b>Redesigned and rebuilt</b> company website (on '.surf' TLD) with React + Redux</li>
+            <li>Incorporated fullscreen video, <b>custom contact form</b> with email notification, and mosaic photo gallery with lightbox</li>
+            <li><b>Updated & expanded site content</b> to include new service offerings and highlight press/reviews</li>
           </ul>
         </Modal>
         <Modal title="Eventmakr" visible={this.state.visible1} footer={null} onCancel={this.closeModal1} style={{ top: 50 }}>
