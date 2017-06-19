@@ -43,11 +43,11 @@ export class Home extends React.Component {
           <CopyCarousel />
           <Grid />
           <Intro />
-          <div className="second-image">
+          <div className="third-image">
           <Dev />
           <Intro2 />
           </div>
-          <div className="third-image">
+          <div className="second-image">
             <Bio
               toggleForm={this.toggleForm}
               isFormActive={this.state.isFormActive}
