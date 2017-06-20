@@ -64,7 +64,7 @@ export class Home extends React.Component {
           <IntroMobile />
           <DevMobile />
           <Intro2Mobile />
-          <Image cloudName="kurzweg" publicId="weho" quality="auto" responsive style={{ width: '100%' }} />
+          <Image cloudName="kurzweg" publicId="sunset" quality="auto" responsive style={{ width: '100%' }} />
           <Bio
             toggleForm={this.toggleForm}
             isFormActive={this.state.isFormActive}
