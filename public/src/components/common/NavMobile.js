@@ -39,10 +39,11 @@ export default class Nav extends React.Component {
                       <a href="https://www.linkedin.com/in/victoriakurzweg/" target="blank"><img src="/media/linkedin.png" style={{ width: '20px', paddingRight: '10%' }} /></a>
                       <a href="https://github.com/vkurzweg" target="blank" ><Icon type="github" style={{ color: 'white', fontSize: '20px', paddingLeft: '30%'}} /></a>
                     </div>
+    const brand = <a href="/" style={{ color: 'white' }}>VK / LA</a>
     return (
       <div style={{ position: 'fixed', width: '100%', zIndex: '10' }}>
         <AppBar
-            title="VK / LA"
+            title={brand}
             style={{ width: '100%', backgroundColor: '#212121' }}
             onLeftIconButtonTouchTap={this.toggleMenu}
             iconElementRight={github}
