@@ -187,7 +187,7 @@ export class Grid extends React.Component {
           <p style={{ marginTop: '3%' }}><em>Building digital presence and brand awareness for a fashion company’s lifestyle brand</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Strategy + Branding + Content</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li>Worked with company headquarters to <b>revamp the brand<a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}> website</a></b> for Bookmarc, an experimental retailer owneed by fashion company Marc Jacobs</b></li>
+            <li>Worked with company headquarters to <b>revamp the brand<a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}> website</a></b> for Bookmarc, an experimental retailer owneed by fashion company Marc Jacobs</li>
             <li>Wrote website copy and <b>optimized</b> page titles and meta descriptions</li>
             <li>Edited the brand's first print catalog, including <b>art direction and copywriting</b></li>
           </ul>
@@ -212,7 +212,7 @@ export class Grid extends React.Component {
             <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="other_sitemap" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px', width: '90%'}} /></div>
           </Carousel>
-          <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Building visibility in a competitive market through SEO & content enhancement</p>
+          <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Building visibility in a competitive market through SEO & content enhancement</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Content Optimization + Enhancement</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
             <li>Served as head of content at <b>search marketing</b> agency specializing in <b>e-commerce</b> and contracted by Hilton Worldwide brands in Europe, Middle East and Africa</li>
