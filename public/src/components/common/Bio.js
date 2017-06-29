@@ -16,7 +16,7 @@ export class Bio extends React.Component {
           </div>
           <div className="col-sm-6" style={{ marginTop: '3%', marginLeft: '3%', width: '100%', paddingBottom: '5%' }}>
             <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>Hello, I'm Victoria. I'm a web designer and developer based in West Hollywood.</p>
-            <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginTop: '2%', marginBottom: '5%'}}>I love working on websites and applications at every stage of development, from ideation to iteration. I'm happy to create a website from scratch, or to revamp an existing site by applying new techniques and technologies.</p>
+            <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginTop: '2%', marginBottom: '5%'}}>I love working on websites and applications at every stage of the agile development process, from ideation to iteration. I'm happy to create a website or app from scratch, or to revamp an existing product by applying new techniques and technologies.</p>
             <button onClick={this.props.toggleForm} style={{ textDecoration: 'none', backgroundColor: '#108EE9', color: '#212121', width: '10em', height: '3em', margin: '0 auto', border: 'none', textTransform: 'uppercase', letterSpacing: '2px', borderRadius: '2px' }}>Let's talk</button>
           </div>
         </div>
