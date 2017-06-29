@@ -4,6 +4,17 @@ import Modal from 'antd/lib/modal';
 import Carousel from 'antd/lib/carousel';
 import { Image } from 'cloudinary-react';
 import styled from 'styled-components';
+import Lightbox from 'react-images';
+import LIGHTBOX_IMAGE_SET_ALOHA from '../../data/LightboxAloha';
+import GALLERY_IMAGE_SET_ALOHA from '../../data/GalleryAloha';
+import LIGHTBOX_IMAGE_SET_EMKR from '../../data/LightboxEmkr';
+import GALLERY_IMAGE_SET_EMKR from '../../data/GalleryEmkr';
+import LIGHTBOX_IMAGE_SET_MJ from '../../data/LightboxMj';
+import GALLERY_IMAGE_SET_MJ from '../../data/GalleryMj';
+import LIGHTBOX_IMAGE_SET_OTHER from '../../data/LightboxOther';
+import GALLERY_IMAGE_SET_OTHER from '../../data/GalleryOther';
+import LIGHTBOX_IMAGE_SET_HILTON from '../../data/LightboxHilton';
+import GALLERY_IMAGE_SET_HILTON from '../../data/GalleryHilton';
 
 const StyledGridTile = styled(GridTile)`
   &:hover {
@@ -51,6 +62,8 @@ export class Grid extends React.Component {
       visible3: false,
       visible4: false,
       visible5: false,
+      lightboxIsOpen: false,
+      currentImage: 0,
     }
     this.showModal = this.showModal.bind(this);
     this.closeModal0 = this.closeModal0.bind(this);
@@ -60,6 +73,12 @@ export class Grid extends React.Component {
     this.closeModal4 = this.closeModal4.bind(this);
     this.closeModal4 = this.closeModal4.bind(this);
     this.closeModal5 = this.closeModal5.bind(this);
+    this.closeLightbox = this.closeLightbox.bind(this);
+    this.gotoNext = this.gotoNext.bind(this);
+    this.gotoPrevious = this.gotoPrevious.bind(this);
+    this.gotoImage = this.gotoImage.bind(this);
+    this.handleClickImage = this.handleClickImage.bind(this);
+    this.openLightbox = this.openLightbox.bind(this);
   }
 
   showModal(idx){
@@ -126,9 +145,75 @@ export class Grid extends React.Component {
     })
   }
 
+  openLightbox(index) {
+    console.log(index)
+    this.setState({
+      currentImage: index,
+      lightboxIsOpen: true,
+    });
+  }
+  closeLightbox() {
+    this.setState({
+      currentImage: 0,
+      lightboxIsOpen: false,
+    });
+  }
+  gotoPrevious() {
+    this.setState({
+      currentImage: this.state.currentImage - 1,
+    });
+  }
+  gotoNext() {
+    this.setState({
+      currentImage: this.state.currentImage + 1,
+    });
+  }
+  gotoImage(index) {
+    this.setState({
+      currentImage: index,
+    });
+  }
+  handleClickImage() {
+    this.gotoNext();
+  }
+
   // render
   render() {
-
+    const childElementsAloha = GALLERY_IMAGE_SET_ALOHA.map((element, idx) => {
+      return (
+        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
+          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+        </div>
+      );
+    });
+    const childElementsEmkr = GALLERY_IMAGE_SET_EMKR.map((element, idx) => {
+      return (
+        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
+          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+        </div>
+      );
+    });
+    const childElementsBookmarc = GALLERY_IMAGE_SET_MJ.map((element, idx) => {
+      return (
+        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
+          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+        </div>
+      );
+    });
+    const childElementsOther = GALLERY_IMAGE_SET_OTHER.map((element, idx) => {
+      return (
+        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
+          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+        </div>
+      );
+    });
+    const childElementsHilton = GALLERY_IMAGE_SET_HILTON.map((element, idx) => {
+      return (
+        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
+          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+        </div>
+      );
+    });
     return (
       <div style={styles.root}>
         <GridList style={styles.gridList} cols={2.2}>
@@ -141,13 +226,22 @@ export class Grid extends React.Component {
             </StyledGridTile>
           ))}
         </GridList>
-        <Modal title="Aloha Brothers" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
-          <Carousel vertical="true">
-            <div><Image cloudName="kurzweg" publicId="screenshot_aloha" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_aloha4" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_aloha3" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_aloha2" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-          </Carousel>
+        <Modal title="Aloha Brothers" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 30 }}>
+          <div className="wrapper">
+            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+              {childElementsAloha}
+              <Lightbox
+                currentImage={this.state.currentImage}
+                isOpen={this.state.lightboxIsOpen}
+                images={LIGHTBOX_IMAGE_SET_ALOHA}
+                onClickImage={this.handleClickImage}
+                onClickNext={this.gotoNext}
+                onClickPrev={this.gotoPrevious}
+                onClose={this.closeLightbox}
+                backdropClosesModal
+              />
+            </div>
+          </div>
           <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Relaunching a surf company's <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>website</a> with a fresh look and feel</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Design + Development + SEO</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
@@ -157,12 +251,21 @@ export class Grid extends React.Component {
           </ul>
         </Modal>
         <Modal title="Eventmakr" visible={this.state.visible1} footer={null} onCancel={this.closeModal1} style={{ top: 50 }}>
-          <Carousel vertical="true">
-            <div><Image cloudName="kurzweg" publicId="screenshot_emkr" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_emkr2" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_emkr3" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_emkr4" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-          </Carousel>
+          <div className="wrapper">
+            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+              {childElementsEmkr}
+              <Lightbox
+                currentImage={this.state.currentImage}
+                isOpen={this.state.lightboxIsOpen}
+                images={LIGHTBOX_IMAGE_SET_EMKR}
+                onClickImage={this.handleClickImage}
+                onClickNext={this.gotoNext}
+                onClickPrev={this.gotoPrevious}
+                onClose={this.closeLightbox}
+                backdropClosesModal
+              />
+            </div>
+          </div>
           <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Bringing an early-stage startup from idea to <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>product</a></em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
@@ -178,12 +281,21 @@ export class Grid extends React.Component {
           onCancel={this.closeModal2}
           style={{ height: '75%', width: '50%', top: 50 }}
         >
-          <Carousel vertical="true">
-            <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc" width="400" quality="auto" responsive style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc2" width="400" quality="auto" responsive  style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc3" width="400" quality="auto" responsive  style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_bookmarc4" width="400" quality="auto" responsive  style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-          </Carousel>
+          <div className="wrapper">
+            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+              {childElementsBookmarc}
+              <Lightbox
+                currentImage={this.state.currentImage}
+                isOpen={this.state.lightboxIsOpen}
+                images={LIGHTBOX_IMAGE_SET_MJ}
+                onClickImage={this.handleClickImage}
+                onClickNext={this.gotoNext}
+                onClickPrev={this.gotoPrevious}
+                onClose={this.closeLightbox}
+                backdropClosesModal
+              />
+            </div>
+          </div>
           <p style={{ marginTop: '3%' }}><em>Building digital presence and brand awareness for a fashion company’s lifestyle brand</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Strategy + Branding + Content</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
@@ -193,11 +305,21 @@ export class Grid extends React.Component {
           </ul>
         </Modal>
         <Modal title="The Other" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
-          <Carousel vertical="true">
-            <div><Image cloudName="kurzweg" publicId="screenshot_other" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="other_sitemap" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px', width: '90%'}} /></div>
-          </Carousel>
+          <div className="wrapper">
+            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+              {childElementsOther}
+              <Lightbox
+                currentImage={this.state.currentImage}
+                isOpen={this.state.lightboxIsOpen}
+                images={LIGHTBOX_IMAGE_SET_OTHER}
+                onClickImage={this.handleClickImage}
+                onClickNext={this.gotoNext}
+                onClickPrev={this.gotoPrevious}
+                onClose={this.closeLightbox}
+                backdropClosesModal
+              />
+            </div>
+          </div>
           <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Building a <a href="http://the-other.herokuapp.com/#/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>digital art gallery</a> in one week</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
@@ -207,11 +329,21 @@ export class Grid extends React.Component {
           </ul>
         </Modal>
         <Modal title="Hilton Worldwide EMEA" visible={this.state.visible4} footer={null} onCancel={this.closeModal4} style={{ top: 50 }}>
-          <Carousel vertical="true">
-            <div><Image cloudName="kurzweg" publicId="screenshot_other" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
-            <div><Image cloudName="kurzweg" publicId="other_sitemap" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px', width: '90%'}} /></div>
-          </Carousel>
+          <div className="wrapper">
+            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+              {childElementsHilton}
+              <Lightbox
+                currentImage={this.state.currentImage}
+                isOpen={this.state.lightboxIsOpen}
+                images={LIGHTBOX_IMAGE_SET_HILTON}
+                onClickImage={this.handleClickImage}
+                onClickNext={this.gotoNext}
+                onClickPrev={this.gotoPrevious}
+                onClose={this.closeLightbox}
+                backdropClosesModal
+              />
+            </div>
+          </div>
           <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Building visibility in a competitive market through SEO & content enhancement</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Content Optimization + Enhancement</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
