@@ -187,8 +187,7 @@ export class Grid extends React.Component {
           <p style={{ marginTop: '3%' }}><em>Building digital presence and brand awareness for a fashion company’s lifestyle brand</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Strategy + Branding + Content</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Expanded digital presence</b> of Bookmarc, an LA-based lifestyle brand owned by fashion company Marc Jacobs</li>
-            <li>Worked with Marc Jacobs headquarters to <b>revamp the Bookmarc <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}> website</a></b></li>
+            <li>Worked with company headquarters to <b>revamp the brand<a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}> website</a></b> for Bookmarc, an experimental retailer owneed by fashion company Marc Jacobs</b></li>
             <li>Wrote website copy and <b>optimized</b> page titles and meta descriptions</li>
             <li>Edited the brand's first print catalog, including <b>art direction and copywriting</b></li>
           </ul>
