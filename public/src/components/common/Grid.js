@@ -246,7 +246,7 @@ export class Grid extends React.Component {
           <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Relaunching a surf company's <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>website</a> with a fresh look and feel</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Design + Development + SEO</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Redesigned and rebuilt</b> company website (on '.surf' TLD) with React + Redux</li>
+            <li><b>Redesigned and rebuilt</b> company website (on '.surf' TLD) with React + Redux (Click <a href="http://alohabrotherssurflessons.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>here</a> to compare the old version)</li>
             <li>Incorporated fullscreen video, <b>custom contact form</b> with email notification, and mosaic photo gallery with lightbox</li>
             <li><b>Updated & expanded site content</b> to include new service offerings and highlight press/reviews</li>
           </ul>
@@ -299,7 +299,7 @@ export class Grid extends React.Component {
               />
             </div>
           </div>
-          <p style={{ marginTop: '1%' }}><em>Building digital presence and brand awareness for a fashion company’s lifestyle brand</em></p>
+          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Building digital presence and brand awareness for a fashion company’s lifestyle brand</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Strategy + Branding + Content</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
             <li>Worked with company headquarters to <b>revamp the brand<a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}> website</a></b> for Bookmarc, an experimental retailer owneed by fashion company Marc Jacobs</li>
