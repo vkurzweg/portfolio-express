@@ -212,12 +212,12 @@ export class Grid extends React.Component {
             <div><Image cloudName="kurzweg" publicId="screenshot_other2" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px'}} /></div>
             <div><Image cloudName="kurzweg" publicId="other_sitemap" width="400" quality="auto" style={{ display: 'block', margin: '0 auto', height: '200px', width: '90%'}} /></div>
           </Carousel>
-          <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Building a <a href="http://the-other.herokuapp.com/#/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>digital art gallery</a> in one week</em></p>
-          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
+          <p style={{ textAlign: 'center', marginTop: '3%' }}><em>Building visibility in a competitive market through SEO & content enhancement</p>
+          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Content Optimization + Enhancement</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Designed and built an online gallery</b> for Los Angeles curator Aaron Freshour for final project of General Assembly WDI program (one-week sprint)</li>
-            <li><b>Created a custom CMS</b> using MEAN stack (MongoDB database, Express server, Angular 1 front end, Node.js runtime)</li>
-            <li>Integrated a <b>responsive CSS</b> mosaic grid and hover effects</li>
+            <li>Served as head of content at <b>search marketing</b> agency specializing in <b>e-commerce</b> and contracted by Hilton Worldwide brands in Europe, Middle East and Africa</li>
+            <li>Performed <b>keyword research</b> and wrote <b>optimized page titles and meta descriptions</b> for hundreds of properties</li>
+            <li><b>Recruited, trained and managed</b> copywriters in Austin, TX and Varna, Bulgaria</li>
           </ul>
         </Modal>
       </div>
