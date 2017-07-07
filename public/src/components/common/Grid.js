@@ -226,6 +226,7 @@ export class Grid extends React.Component {
             </StyledGridTile>
           ))}
         </GridList>
+        <p style={{ fontSize: '12px', fontStyle: 'italic', textAlign: 'center' }}>Click on any image for more info</p>
         <Modal title="Aloha Brothers" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
           <div className="wrapper">
             <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
