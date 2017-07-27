@@ -266,7 +266,7 @@ export class Grid extends React.Component {
               />
             </div>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Creating a <a href="" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>digital presence</a> for an L.A. musician and composer</em></p>
+          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Creating a <a href="https://siliconbeachguitar.herokuapp.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>digital presence</a> for an L.A. musician and composer</em></p>
           <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Design + Development + Branding</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
             <li><b>Designed & developed</b> a business website for musician and composer Ali Memarian using React + Node</li>
