@@ -249,7 +249,7 @@ export class Grid extends React.Component {
           ))}
         </GridList>
         <p style={{ fontSize: '12px', fontStyle: 'italic', textAlign: 'center' }}>Click on any image for more info</p>
-        <Modal title="Silicon Beach Guitar" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
+        <Modal title="Silicon Beach Guitar Lessons" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
           <div className="wrapper">
             <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
             <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
@@ -266,11 +266,12 @@ export class Grid extends React.Component {
               />
             </div>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Creating a <a href="" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>digital presence</a> for an L.A. musician and composer</em></p>
-          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Design + Development + Branding</p>
+          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Relaunching a surf company's <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>website</a> with a fresh look and feel</em></p>
+          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Design + Development + SEO</p>
           <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Designed & developed</b> a business website for musician and composer Ali Memarian using React + Node</li>
-            <li>Incorporated <b>custom-designed UI components and contact form</b> with email notification</li>
+            <li><b>Redesigned and rebuilt</b> company website (on '.surf' TLD) with React + Redux (Click <a href="http://alohabrotherssurflessons.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>here</a> to compare the old version)</li>
+            <li>Incorporated fullscreen video, <b>custom contact form</b> with email notification, and mosaic photo gallery with lightbox</li>
+            <li><b>Updated & expanded site content</b> to include new service offerings and highlight press/reviews</li>
           </ul>
         </Modal>
         <Modal title="Aloha Brothers" visible={this.state.visible1} footer={null} onCancel={this.closeModal1} style={{ top: 50 }}>

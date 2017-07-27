@@ -15,6 +15,9 @@ const steps = [{
     <div>
       <p style={{ fontSize: '14px' }}>Wireframes, Prototypes & Responsive User Interfaces</p>
       <div className="container" style={{ lineHeight: '200%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%', width: '100%'}}>
+        <div className="row">
+          <Image cloudName="kurzweg" publicId="screenshot_emkr3" width="300" quality="auto" responsive style={{ display: 'block', margin: '0 auto' }} />
+        </div>
         <div className="row" style={{ display: 'inline-flex', width: '80%' }}>
           <div className="col-md-4" style={{ padding: '1%' }}>
             <img src="/media/search_blue.png" style={{ marginBottom: '7%'}} />
@@ -97,7 +100,7 @@ export class Dev extends React.Component {
           <Step title="Development" icon={<Icon type="code-o" />} />
           <Step title="Content" icon={<Icon type="edit" />} />
         </Steps>
-        <div style={{ height: '210px' }} className="steps-content">{steps[this.state.current].content}</div>
+        <div style={{ height: '410px' }} className="steps-content">{steps[this.state.current].content}</div>
           <div className="steps-action">
             {
               this.state.current < steps.length

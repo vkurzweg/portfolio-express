@@ -120,7 +120,7 @@
 }
 
 .masonry {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     column-count: 2;
     column-gap: .5em;
@@ -129,6 +129,7 @@
 .item-container {
   width: 100%;
   display: block;
+  margin: 0 auto;
   background: url('http://hoott.com/images/ajax_loader.gif') 50% 50% no-repeat;
 }
 
