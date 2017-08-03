@@ -44,10 +44,6 @@ export class Home extends React.Component {
           <Grid />
           <Intro />
           <div className="third-image">
-          <Dev />
-          <Intro2 />
-          </div>
-          <div className="second-image">
             <Bio
               toggleForm={this.toggleForm}
               isFormActive={this.state.isFormActive}
@@ -62,8 +58,6 @@ export class Home extends React.Component {
           </div>
           <Grid />
           <IntroMobile />
-          <DevMobile />
-          <Intro2Mobile />
           <Image cloudName="kurzweg" publicId="sunset" quality="auto" responsive style={{ width: '100%' }} />
           <Bio
             toggleForm={this.toggleForm}

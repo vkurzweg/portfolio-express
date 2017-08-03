@@ -13,8 +13,16 @@ const GALLERY_IMAGE_SET_ALOHA = [
   }, {
     src: 'screenshot_aloha2',
     alt: 'Updated and redesigned photo gallery featuring mosaic and lightbox effects'
-  },
-
+  }, {
+    src: 'screenshot_dingdelight',
+    alt: 'Ding repair service microsite - branding and optimization'
+  }, {
+    src: 'screenshot_dingdelight2',
+    alt: 'Enhancement of previous service page content - image edit and copy rewrite'
+  }, {
+    src: 'screenhsot_dingmobile',
+    alt: 'Mobile version of ding repair microsite'
+  }
 ]
 
 export default GALLERY_IMAGE_SET_ALOHA;

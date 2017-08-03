@@ -15,8 +15,8 @@ export class Bio extends React.Component {
             <Image cloudName="kurzweg" publicId="profile" quality="auto" responsive alt="Victoria Kurzweg" style={{ maxHeight: '250px', paddingTop: '5%'}} />
           </div>
           <div className="col-sm-6" style={{ marginTop: '3%', marginLeft: '3%', width: '100%', paddingBottom: '5%' }}>
-            <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>Hello, I'm Victoria. I'm a web designer and developer based in West Hollywood.</p>
-            <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginTop: '2%', marginBottom: '5%'}}>I love working on websites and applications at every stage of the agile development process, from ideation to iteration. I'm happy to create a website or app from scratch, or to revamp an existing product by applying new techniques and technologies.</p>
+            <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>Victoria Kurzweg is a designer and developer specializing in branding and content enhancement. She has worked with global brands including Marc Jacobs International and Waldorf Astoria, as well as startups in Silicon Beach. Victoria works primarily with Sketch and InVision for wireframing and prototyping, and React.js and Node.js for building responsive websites and applications.</p>
+            <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginTop: '2%', marginBottom: '5%'}}>Born in New Orleans, Victoria has lived in Los Angeles, Austin, and Washington, D.C. She has a master's degree in history of international relations from the London School of Economics.</p>
             <button onClick={this.props.toggleForm} style={{ textDecoration: 'none', backgroundColor: '#108EE9', color: '#212121', width: '10em', height: '3em', margin: '0 auto', border: 'none', textTransform: 'uppercase', letterSpacing: '2px', borderRadius: '2px' }}>Let's talk</button>
           </div>
         </div>

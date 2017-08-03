@@ -44,7 +44,7 @@ const tilesData = [
   {
     img: 'screenshot_sbgl',
   }, {
-    img: 'screenshot_aloha',
+    img: 'screenshot_dingdelight',
   }, {
     img: 'screenshot_emkr',
   }, {

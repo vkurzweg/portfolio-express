@@ -13,7 +13,16 @@ const LIGHTBOX_IMAGE_SET_ALOHA = [
   }, {
     src: 'http://res.cloudinary.com/kurzweg/image/upload/v1496636459/screenshot_aloha2.png',
     caption: 'Updated and redesigned photo gallery featuring mosaic and lightbox effects',
-  },
+  }, {
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1501801029/screenshot_dingdelight.png',
+    caption: 'Ding repair service microsite - branding and optimization',
+  }, {
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1501801028/screenshot_dingdelight2.png',
+    caption: 'Enhancement of previous service page content - image edit and copy rewrite',
+  }, {
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1501801030/screenshot_dingmobile.jpg',
+    caption: 'Mobile version of ding repair microsite, including video',
+  }
 
 ]
 
