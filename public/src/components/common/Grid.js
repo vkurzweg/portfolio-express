@@ -46,9 +46,9 @@ const tilesData = [
   }, {
     img: 'screenshot_dingdelight',
   }, {
-    img: 'screenshot_emkr',
-  }, {
     img: 'screenshot_bookmarc',
+  }, {
+    img: 'screenshot_emkr',
   }, {
     img: 'screenshot_other',
   }, {
@@ -298,7 +298,7 @@ export class Grid extends React.Component {
             <li><b>Updated & expanded site content</b> to include new service offerings and highlight press/reviews</li>
           </ul>
         </Modal>
-        <Modal title="Eventmakr" visible={this.state.visible2} footer={null} onCancel={this.closeModal2} style={{ top: 50 }}>
+        <Modal title="Eventmakr" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
           <div className="wrapper">
             <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
             <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
@@ -325,9 +325,9 @@ export class Grid extends React.Component {
         </Modal>
         <Modal
           title="Marc Jacobs"
-          visible={this.state.visible3}
+          visible={this.state.visible2}
           footer={null}
-          onCancel={this.closeModal3}
+          onCancel={this.closeModal2}
           style={{ top: 50 }}
         >
           <div className="wrapper">
