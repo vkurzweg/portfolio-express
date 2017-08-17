@@ -19,7 +19,7 @@ export class Intro extends React.Component {
           <div className="col-sm-6">
             <ul style={{ lineHeight: '200%', textTransform: 'uppercase', letterSpacing: '3px', textAlign: 'left', listStyleType: 'square' }}>
               <li>SEO</li>
-              <li>copywriting & editing</li>
+              <li>copywriting</li>
               <li>UX</li>
             </ul>
           </div>
