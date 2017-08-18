@@ -2,6 +2,8 @@ import React from "react";
 import TextCarousel from 'react-text-carousel';
 
 const phrases = [ 'Build your digital presence', 'Iterate' ]
+
+// ['Responsive web design + Creative development + UX + Content enhancement + SEO + Brand management']
 // ['Custom web design + development', 'On-brand content enhancement', 'Optimization + engagement across devices' ]
 const interval = 2500;
 
