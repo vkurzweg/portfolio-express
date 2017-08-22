@@ -422,54 +422,81 @@ export class Grid extends React.Component {
          </div>
         </Modal>
         <Modal title="The Other" visible={this.state.visible4} footer={null} onCancel={this.closeModal4} style={{ top: 50 }}>
-          <div className="wrapper">
-            <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
-              {childElementsOther}
-              <Lightbox
-                currentImage={this.state.currentImage}
-                isOpen={this.state.lightboxIsOpen}
-                images={LIGHTBOX_IMAGE_SET_OTHER}
-                onClickImage={this.handleClickImage}
-                onClickNext={this.gotoNext}
-                onClickPrev={this.gotoPrevious}
-                onClose={this.closeLightbox}
-                backdropClosesModal
-              />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 wrapper">
+              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
+              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+                {childElementsOther}
+                <Lightbox
+                  currentImage={this.state.currentImage}
+                  isOpen={this.state.lightboxIsOpen}
+                  images={LIGHTBOX_IMAGE_SET_OTHER}
+                  onClickImage={this.handleClickImage}
+                  onClickNext={this.gotoNext}
+                  onClickPrev={this.gotoPrevious}
+                  onClose={this.closeLightbox}
+                  backdropClosesModal
+                />
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
+              <div style={{ width: '90%', margin: '0 auto' }}>
+                <p>Web Development (General Assembly WDI Final Project)</p>
+                <p>Web & UI Design</p>
+              </div>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
+              <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                <p>Node.js + Express</p>
+                <p>MongoDB</p>
+                <p>Angular.js</p>
+                <p>HTML5, CSS3 & JavaScript</p>
+                <p>jQuery</p>
+                <p>Bootstrap</p>
+                <p>Sketch</p>
+              </div>
+              <a href="http://the-other.herokuapp.com/#/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Building a <a href="http://the-other.herokuapp.com/#/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>digital art gallery</a> in one week</em></p>
-          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UI Design</p>
-          <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Created an online gallery</b> for Los Angeles curator Aaron Freshour for final project of General Assembly WDI program (one-week sprint)</li>
-            <li><b>Built a custom CMS</b> using MEAN stack (MongoDB database, Express server, Angular 1 front end, Node.js runtime)</li>
-            <li>Integrated a <b>responsive CSS</b> mosaic grid and hover effects</li>
-          </ul>
+        </div>
         </Modal>
         <Modal title="Hilton Worldwide EMEA" visible={this.state.visible5} footer={null} onCancel={this.closeModal5} style={{ top: 50 }}>
-          <div className="wrapper">
-            <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
-              {childElementsHilton}
-              <Lightbox
-                currentImage={this.state.currentImage}
-                isOpen={this.state.lightboxIsOpen}
-                images={LIGHTBOX_IMAGE_SET_HILTON}
-                onClickImage={this.handleClickImage}
-                onClickNext={this.gotoNext}
-                onClickPrev={this.gotoPrevious}
-                onClose={this.closeLightbox}
-                backdropClosesModal
-              />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 wrapper">
+              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
+              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+                {childElementsHilton}
+                <Lightbox
+                  currentImage={this.state.currentImage}
+                  isOpen={this.state.lightboxIsOpen}
+                  images={LIGHTBOX_IMAGE_SET_HILTON}
+                  onClickImage={this.handleClickImage}
+                  onClickNext={this.gotoNext}
+                  onClickPrev={this.gotoPrevious}
+                  onClose={this.closeLightbox}
+                  backdropClosesModal
+                />
+              </div>
+            </div>
+              <div className="col-sm-6" style={{ padding: '3%' }}>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
+                <div style={{ width: '90%', margin: '0 auto', marginBottom: '5%' }}>
+                  <p>Search Engine Optimization</p>
+                  <p>Content Strategy</p>
+                  <p>Copywriting for Ecommerce</p>
+                </div>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
+                <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                  <p>HTML</p>
+                  <p>WordPress</p>
+                  <p>Google AdWords</p>
+                </div>
+              <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Building visibility in a competitive market through SEO & content enhancement</em></p>
-          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Content Optimization + Enhancement</p>
-          <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li>Served as head of content at <b>search marketing</b> agency specializing in <b>e-commerce</b> and contracted by Hilton Worldwide brands in Europe, Middle East and Africa</li>
-            <li>Performed <b>keyword research</b> and wrote <b>optimized page titles and meta descriptions</b> for hundreds of properties</li>
-            <li><b>Recruited, trained and managed</b> copywriters in Austin, TX and Varna, Bulgaria</li>
-          </ul>
+        </div>
         </Modal>
       </div>
     );

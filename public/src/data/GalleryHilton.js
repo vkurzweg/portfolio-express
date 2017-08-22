@@ -1,7 +1,7 @@
 const GALLERY_IMAGE_SET_HILTON = [
   {
-    src: 'screenshot_caledonian',
-    alt: '',
+    src: 'screenshot_calendonian',
+    alt: 'SEO + Content Enhancement for Waldorf Astoria & other brands in the Hilton Worldwide portfolio',
   },
 ]
 
