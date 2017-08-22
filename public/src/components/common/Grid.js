@@ -197,7 +197,7 @@ export class Grid extends React.Component {
     const childElementsSilicon = GALLERY_IMAGE_SET_SBGL.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
-          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} quality="auto" crop="scale" responsive />
         </div>
       );
     });
@@ -250,78 +250,138 @@ export class Grid extends React.Component {
         </GridList>
         <p style={{ fontSize: '12px', fontStyle: 'italic', textAlign: 'center' }}>Click on any image for more info</p>
         <Modal title="Silicon Beach Guitar" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
-          <div className="wrapper">
-            <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
-              {childElementsSilicon}
-              <Lightbox
-                currentImage={this.state.currentImage}
-                isOpen={this.state.lightboxIsOpen}
-                images={LIGHTBOX_IMAGE_SET_SBGL}
-                onClickImage={this.handleClickImage}
-                onClickNext={this.gotoNext}
-                onClickPrev={this.gotoPrevious}
-                onClose={this.closeLightbox}
-                backdropClosesModal
-              />
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-6 wrapper">
+                <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
+                <div className="masonry">
+                  {childElementsSilicon}
+                  <Lightbox
+                    currentImage={this.state.currentImage}
+                    isOpen={this.state.lightboxIsOpen}
+                    images={LIGHTBOX_IMAGE_SET_SBGL}
+                    onClickImage={this.handleClickImage}
+                    onClickNext={this.gotoNext}
+                    onClickPrev={this.gotoPrevious}
+                    onClose={this.closeLightbox}
+                    backdropClosesModal
+                  />
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
+                <div style={{ width: '85%', margin: '0 auto' }}>
+                  <p>Web Development</p>
+                  <p>UX, Web & UI Design</p>
+                  <p>Branding</p>
+                </div>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
+                <div style={{ width: '85%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                  <p>Node.js + Express</p>
+                  <p>NPM</p>
+                  <p>React + Redux</p>
+                  <p>HTML, CSS/SCSS & JavaScript</p>
+                  <p>Styled Components</p>
+                  <p>Bootstrap</p>
+                  <p>Photoshop</p>
+                  <p>Sketch</p>
+                </div>
+              </div>
+              <a href="https://siliconbeachguitar.herokuapp.com/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Creating a <a href="https://siliconbeachguitar.herokuapp.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>digital foundation</a> for L.A. musician and composer Ali Memarian</em></p>
-          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Design + Development + Branding</p>
-          <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Designed & developed</b> a responsive business website using React + Node</li>
-            <li>Incorporated <b>custom-designed UI components and contact form</b> with email notification</li>
-          </ul>
         </Modal>
         <Modal title="Aloha Brothers" visible={this.state.visible1} footer={null} onCancel={this.closeModal1} style={{ top: 50 }}>
-          <div className="wrapper">
-            <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
-              {childElementsAloha}
-              <Lightbox
-                currentImage={this.state.currentImage}
-                isOpen={this.state.lightboxIsOpen}
-                images={LIGHTBOX_IMAGE_SET_ALOHA}
-                onClickImage={this.handleClickImage}
-                onClickNext={this.gotoNext}
-                onClickPrev={this.gotoPrevious}
-                onClose={this.closeLightbox}
-                backdropClosesModal
-              />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 wrapper">
+              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
+              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+                {childElementsAloha}
+                <Lightbox
+                  currentImage={this.state.currentImage}
+                  isOpen={this.state.lightboxIsOpen}
+                  images={LIGHTBOX_IMAGE_SET_ALOHA}
+                  onClickImage={this.handleClickImage}
+                  onClickNext={this.gotoNext}
+                  onClickPrev={this.gotoPrevious}
+                  onClose={this.closeLightbox}
+                  backdropClosesModal
+                />
+              </div>
             </div>
+            <div className="col-sm-6">
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
+              <div style={{ width: '90%', margin: '0 auto' }}>
+                <p>Web Development</p>
+                <p>Responsive Web & UI Design</p>
+                <p>Branding & Brand Strategy</p>
+                <p>Copyediting</p>
+                <p>Workflow Optimization</p>
+              </div>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
+              <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                <p>Node.js + Express</p>
+                <p>NPM</p>
+                <p>React + Redux</p>
+                <p>HTML5, CSS/SCSS & JavaScript</p>
+                <p>Material Design for React</p>
+                <p>Styled Components</p>
+                <p>Bootstrap</p>
+                <p>Photoshop</p>
+              </div>
+            </div>
+            <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Relaunching a surf company's <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>website</a> with a fresh look and feel</em></p>
-          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Design + Development + SEO</p>
-          <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Redesigned and rebuilt</b> company website (on '.surf' TLD) with React + Redux (Click <a href="http://alohabrotherssurflessons.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>here</a> to compare the old version)</li>
-            <li>Incorporated fullscreen video, <b>custom contact form</b> with email notification, and mosaic photo gallery with lightbox</li>
-            <li><b>Updated & expanded site content</b> to include new service offerings and highlight press/reviews</li>
-          </ul>
+        </div>
         </Modal>
         <Modal title="Eventmakr" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
-          <div className="wrapper">
-            <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
-              {childElementsEmkr}
-              <Lightbox
-                currentImage={this.state.currentImage}
-                isOpen={this.state.lightboxIsOpen}
-                images={LIGHTBOX_IMAGE_SET_EMKR}
-                onClickImage={this.handleClickImage}
-                onClickNext={this.gotoNext}
-                onClickPrev={this.gotoPrevious}
-                onClose={this.closeLightbox}
-                backdropClosesModal
-              />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 wrapper">
+              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
+              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+                {childElementsEmkr}
+                <Lightbox
+                  currentImage={this.state.currentImage}
+                  isOpen={this.state.lightboxIsOpen}
+                  images={LIGHTBOX_IMAGE_SET_EMKR}
+                  onClickImage={this.handleClickImage}
+                  onClickNext={this.gotoNext}
+                  onClickPrev={this.gotoPrevious}
+                  onClose={this.closeLightbox}
+                  backdropClosesModal
+                />
+              </div>
             </div>
+            <div className="col-sm-6">
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
+              <div style={{ width: '90%', margin: '0 auto' }}>
+                <p>Web Development (SaaS Minimum Viable Product)</p>
+                <p>UX, Web & UI Design</p>
+                <p>Branding & Brand Strategy</p>
+                <p>Copyediting</p>
+                <p>Marketing</p>
+              </div>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
+              <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                <p>Node.js + Express</p>
+                <p>MongoDB</p>
+                <p>NPM</p>
+                <p>React + Redux</p>
+                <p>HTML5, CSS/SCSS & JavaScript</p>
+                <p>Material Design for React</p>
+                <p>Stripe.js</p>
+                <p>Google Maps API</p>
+                <p>Firebase</p>
+                <p>Bootstrap</p>
+                <p>Photoshop</p>
+                <p>Sketch</p>
+              </div>
+            </div>
+            <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Bringing an early-stage startup from idea to <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}>product</a></em></p>
-          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Development + UX/UI Design</p>
-          <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li><b>Designed + built landing pages</b> for Eventmakr, an early-stage startup in Santa Monica </li>
-            <li><b>Led wireframing, prototyping, and UI design</b> during minimum viable product development</li>
-            <li>Co-developed a <b>responsive React + Redux application</b> with search, chat, and payment features</li>
-          </ul>
+        </div>
         </Modal>
         <Modal
           title="Marc Jacobs"
@@ -330,29 +390,36 @@ export class Grid extends React.Component {
           onCancel={this.closeModal2}
           style={{ top: 50 }}
         >
-          <div className="wrapper">
-            <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-            <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
-              {childElementsBookmarc}
-              <Lightbox
-                currentImage={this.state.currentImage}
-                isOpen={this.state.lightboxIsOpen}
-                images={LIGHTBOX_IMAGE_SET_MJ}
-                onClickImage={this.handleClickImage}
-                onClickNext={this.gotoNext}
-                onClickPrev={this.gotoPrevious}
-                onClose={this.closeLightbox}
-                backdropClosesModal
-              />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 wrapper">
+              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
+              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+                {childElementsBookmarc}
+                <Lightbox
+                  currentImage={this.state.currentImage}
+                  isOpen={this.state.lightboxIsOpen}
+                  images={LIGHTBOX_IMAGE_SET_MJ}
+                  onClickImage={this.handleClickImage}
+                  onClickNext={this.gotoNext}
+                  onClickPrev={this.gotoPrevious}
+                  onClose={this.closeLightbox}
+                  backdropClosesModal
+                />
+              </div>
+            </div>
+              <div className="col-sm-6" style={{ padding: '3%' }}>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
+                <div style={{ width: '90%', margin: '0 auto', marginBottom: '5%' }}>
+                  <p>Brand Strategy</p>
+                  <p>Search Engine Optimization</p>
+                  <p>Art/Creative Direction</p>
+                  <p>Copywriting (Print & Ecommerce)</p>
+                </div>
+              <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
-          <p style={{ textAlign: 'center', marginTop: '1%' }}><em>Building digital presence and brand awareness for a fashion company’s lifestyle brand</em></p>
-          <p style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '2%', marginBottom: '2%' }}>Strategy + Branding + Content</p>
-          <ul style={{ width: '90%', display: 'block', margin: '0 auto', listStyleType: 'circle', textAlign: 'left', marginTop: '2%', lineHeight: '200%' }}>
-            <li>Worked with company headquarters to <b>revamp the brand<a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', color: '#108EE9', fontWeight: 'bold' }}> website</a></b> for Bookmarc, an experimental retailer owneed by fashion company Marc Jacobs</li>
-            <li>Wrote website copy and <b>optimized</b> page titles and meta descriptions</li>
-            <li>Edited the brand's first print catalog, including <b>art direction and copywriting</b></li>
-          </ul>
+         </div>
         </Modal>
         <Modal title="The Other" visible={this.state.visible4} footer={null} onCancel={this.closeModal4} style={{ top: 50 }}>
           <div className="wrapper">

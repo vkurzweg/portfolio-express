@@ -19,9 +19,6 @@ const GALLERY_IMAGE_SET_ALOHA = [
   }, {
     src: 'screenshot_dingdelight2',
     alt: 'Enhancement of previous service page content - image edit and copy rewrite'
-  }, {
-    src: 'screenhsot_dingmobile',
-    alt: 'Mobile version of ding repair microsite'
   }
 ]
 
