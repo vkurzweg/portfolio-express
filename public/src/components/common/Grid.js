@@ -248,7 +248,7 @@ export class Grid extends React.Component {
             </StyledGridTile>
           ))}
         </GridList>
-        <p style={{ fontSize: '12px', fontStyle: 'italic', textAlign: 'center' }}>Click on any image for more info</p>
+        <p style={{ fontSize: '12px', fontStyle: 'italic', textAlign: 'center' }}>Click on image for project details</p>
         <Modal title="Silicon Beach Guitar" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
           <div className="container">
             <div className="row">
