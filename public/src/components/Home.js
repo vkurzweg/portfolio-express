@@ -40,7 +40,6 @@ export class Home extends React.Component {
           <div className="main-image">
             <Nav />
           </div>
-          <CopyCarousel />
           <Grid />
           <Intro />
           <div className="third-image">
@@ -53,9 +52,6 @@ export class Home extends React.Component {
         <MediaQuery maxWidth={767}>
           <NavMobile />
           <Image cloudName="kurzweg" publicId="cherryblossom_bwcrop" quality="auto" responsive style={{ width: '100%' }} />
-          <div style={{ padding: '2%' }}>
-            <CopyCarousel />
-          </div>
           <Grid />
           <IntroMobile />
           <Image cloudName="kurzweg" publicId="palmtrees" quality="auto" responsive style={{ width: '100%' }} />
