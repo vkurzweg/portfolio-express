@@ -1,15 +1,15 @@
 const GALLERY_IMAGE_SET_ALOHA = [
   {
     src: 'screenshot_sbgl_mobile',
-    alt: 'Landing page for desktop and large screens, featuring full-screen video',
+    alt: '',
   },
   {
     src: 'screenshot_sbgl3',
-    alt: 'Landing page for mobile, featuring image slider',
+    alt: '',
   },
   {
-    src: 'screenshot_sbgl2',
-    alt: 'Redesigned Rates & Packages page'
+    src: 'screenshot_sbgposters',
+    alt: ''
   },
   {
     src: 'screenshot_sbgl4',

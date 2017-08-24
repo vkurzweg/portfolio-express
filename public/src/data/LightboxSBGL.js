@@ -8,7 +8,7 @@ const LIGHTBOX_IMAGE_SET_ALOHA = [
     caption: 'Screeenshot',
   },
   {
-    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1501055162/screenshot_sbgl2.png',
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1503616103/screenshot_sbgposters.png',
     caption: 'Screenshot',
   },{
     src: 'http://res.cloudinary.com/kurzweg/image/upload/v1501112353/screenshot_sbgl4.png',
