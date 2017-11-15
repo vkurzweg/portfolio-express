@@ -3,6 +3,7 @@ import AppBar from 'material-ui/AppBar';
 import Menu from 'antd/lib/menu';
 import Icon from 'antd/lib/icon';
 import { browserHistory } from 'react-router';
+import { Image } from 'cloudinary-react';
 
 
 const SubMenu = Menu.SubMenu;
@@ -40,12 +41,12 @@ export default class Nav extends React.Component {
                       <a href="https://www.linkedin.com/in/victoriakurzweg/" target="blank"><img src="/media/linkedin.png" style={{ width: '20px', paddingRight: '10%' }} /></a>
                       <a href="https://github.com/vkurzweg" target="blank" ><Icon type="github" style={{ color: 'white', fontSize: '20px', paddingLeft: '30%'}} /></a>
                     </div>
-    const brand = <a href="/" style={{ color: 'white', letterSpacing: '2px' }}>vk.digital</a>
+    const brand = <a href="/" style={{ color: 'white', letterSpacing: '2px' }}>vk.digital <Image style={{ width: '25px', marginLeft: '-8px', marginTop: '-4px' }} cloudName="kurzweg" publicId="vklogo_mock" quality="auto" crop="scale" responsive /></a>
     return (
       <div style={{ position: 'fixed', width: '100%', zIndex: '10' }}>
         <AppBar
             title={brand}
-            style={{ width: '100%', backgroundColor: '#212121' }}
+            style={{ width: '100%', backgroundColor: 'black' }}
             onLeftIconButtonTouchTap={this.toggleMenu}
             iconElementRight={github}
             iconStyleRight={{ marginTop: '2%', marginRight: '1.5%'}}

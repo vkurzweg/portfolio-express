@@ -4,6 +4,7 @@ import NavMobile from './common/NavMobile';
 import CopyCarousel from './common/CopyCarousel';
 import Dev from './common/Dev';
 import DevMobile from './common/DevMobile';
+import GridCases from './common/GridCases';
 import Grid from './common/Grid';
 import Intro from './common/Intro';
 import IntroMobile from './common/IntroMobile';
@@ -40,8 +41,8 @@ export class Home extends React.Component {
           <div className="main-image">
             <Nav />
           </div>
-          <Grid />
           <Intro />
+          <Grid />
           <div className="third-image">
             <Bio
               toggleForm={this.toggleForm}
@@ -52,8 +53,8 @@ export class Home extends React.Component {
         <MediaQuery maxWidth={767}>
           <NavMobile />
           <Image cloudName="kurzweg" publicId="cherryblossom_bwcrop" quality="auto" responsive style={{ width: '100%' }} />
-          <Grid />
           <IntroMobile />
+          <Grid />
           <Image cloudName="kurzweg" publicId="palmtrees" quality="auto" responsive style={{ width: '100%' }} />
           <Bio
             toggleForm={this.toggleForm}

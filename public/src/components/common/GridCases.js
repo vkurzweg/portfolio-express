@@ -1,10 +1,10 @@
 import React from "react";
-import {GridList, GridTile} from 'material-ui/GridList';
 import Modal from 'antd/lib/modal';
 import Carousel from 'antd/lib/carousel';
 import { Image } from 'cloudinary-react';
 import styled from 'styled-components';
 import Lightbox from 'react-images';
+import GALLERY_IMAGE_SET from '../../data/Gallery';
 import LIGHTBOX_IMAGE_SET_SBGL from '../../data/LightboxSBGL';
 import GALLERY_IMAGE_SET_SBGL from '../../data/GallerySBGL';
 import LIGHTBOX_IMAGE_SET_ALOHA from '../../data/LightboxAloha';
@@ -18,52 +18,7 @@ import GALLERY_IMAGE_SET_OTHER from '../../data/GalleryOther';
 import LIGHTBOX_IMAGE_SET_HILTON from '../../data/LightboxHilton';
 import GALLERY_IMAGE_SET_HILTON from '../../data/GalleryHilton';
 
-const StyledGridTile = styled(GridTile)`
-  &:hover {
-    outline-style: outset;
-    outline-color: #108EE9;
-  }
-`;
 
-const StyledGridTileHead = styled(GridTile)`
-  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1510723938/palma_work_edit.png');
-  width:100%;
-  height:240px;
-  background-repeat:no-repeat;
-  background-size:cover;
-  padding-bottom: 5%;
-`;
-
-const styles = {
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    paddingTop: '3%',
-    backgroundColor: 'black',
-  },
-  gridList: {
-    width: '85%',
-    display: 'flex',
-    flexWrap: 'wrap',
-    overflowX: 'auto',
-    margin: '0 auto',
-    marginBottom: '1%'
-  },
-};
-
-const tilesData = [
-  {
-    img: 'screenshot_bookmarc',
-  }, {
-    img: 'screenshot_aloha',
-  }, {
-    img: 'screenshot_trianonpalace1',
-  }, {
-    img: 'screenshot_sbgl',
-  }, {
-    img: 'screenshot_emkr',
-  }
-]
 
 export class Grid extends React.Component {
   constructor(props) {
@@ -203,6 +158,13 @@ export class Grid extends React.Component {
 
   // render
   render() {
+    const childElements = GALLERY_IMAGE_SET.map((element, idx) => {
+      return (
+        <div key={idx} onClick={() => this.showModal.bind(this, idx)} className="item-container" >
+          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="700" quality="auto" crop="scale" responsive />
+        </div>
+      );
+    });
     const childElementsSilicon = GALLERY_IMAGE_SET_SBGL.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
@@ -246,18 +208,15 @@ export class Grid extends React.Component {
       );
     });
     return (
-      <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2} cellHeight={300}>
-          <StyledGridTileHead />
-          {tilesData.map((tile, idx) => (
-            <StyledGridTile
-              key={tile.img}
-              onClick={this.showModal.bind(this, idx)}
-            >
-              <Image style={{ width: '100%' }} cloudName="kurzweg" publicId={tile.img} quality="auto" responsive />
-            </StyledGridTile>
-          ))}
-        </GridList>
+      <div className="wrapper">
+        <div className="masonry" style={{ margin: '0 auto' }}>
+          <div className="item-container-head" >
+            <Image className="item-head" cloudName="kurzweg" publicId="palma_worklogo" width="700" quality="auto" crop="scale" responsive />
+          </div>
+
+          {childElements}
+          <p style={{ fontSize: '12px', fontStyle: 'italic', textAlign: 'center' }}>Click on image for project details</p>
+        </div>
         <Modal title="Silicon Beach Guitar" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
           <div className="container">
             <div className="row">
@@ -515,18 +474,3 @@ export class Grid extends React.Component {
 
 export default Grid;
 
-// <Modal title="Hilton Worldwide EMEA" visible={this.state.visible4} footer={null} onCancel={this.closeModal4}>
-//   <p>some contents...</p>
-//   <p>some contents...</p>
-//   <p>some contents...</p>
-// </Modal>
-// <Modal title="Tripific" visible={this.state.visible3} footer={null} onCancel={this.closeModal3}>
-//   <p>some contents...</p>
-//   <p>some contents...</p>
-//   <p>some contents...</p>
-// </Modal>
-// <Modal title="Slot Machine" visible={this.state.visible5} footer={null} onCancel={this.closeModal5}>
-//   <p>some contents...</p>
-//   <p>some contents...</p>
-//   <p>some contents...</p>
-// </Modal>
