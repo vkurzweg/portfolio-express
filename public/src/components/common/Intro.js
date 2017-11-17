@@ -21,8 +21,8 @@ export class Intro extends React.Component {
       <div className="container" style={{ width: '100%', backgroundColor: 'black', color: 'white', padding: '1%', fontSize: '16px' }}>
         <h1 style={{ color: 'white', fontSize: '50px', letterSpacing: '4px', fontFamily: 'Oswald', paddingTop: '3%', width: '60%', margin: '0 auto' }}><span style={{ color: '#3D8EE2' }}>inspired website</span> <br /></h1>
         <h1 style={{ color: '#C2C979', fontSize: '50px', letterSpacing: '4px', fontFamily: 'Oswald', paddingTop: '1%', width: '60%', margin: '0 auto', textAlign: 'center' }}>creation + iteration</h1>
-        <h2 style={{ color: 'white', fontFamily: 'Josefin Sans', fontSize: '26px', padding: '1em', letterSpacing: '1px', width: '66%', margin: '0 auto', marginTop: '2%', lineHeight: '1.5em' }}>vk.digital is a branding, design, and development consultancy.</h2>
-        <h2 style={{ color: 'white', fontFamily: 'Josefin Sans', fontSize: '26px', padding: '1em', letterSpacing: '1px', width: '66%', margin: '0 auto', lineHeight: '1em', marginTop: '-2%' }}>We make on-brand websites that look great on mobile + desktop.</h2>
+        <h2 style={{ color: 'white', fontFamily: 'Josefin Sans', fontSize: '26px', padding: '1em', letterSpacing: '1px', width: '86%', margin: '0 auto', marginTop: '2%', lineHeight: '1.5em', textAlign: 'center' }}>vk.digital is a branding, design, and development consultancy.</h2>
+        <h2 style={{ color: 'white', fontFamily: 'Josefin Sans', fontSize: '26px', padding: '1em', letterSpacing: '1px', width: '86%', margin: '0 auto', lineHeight: '1em', marginTop: '-2%', textAlign: 'center' }}>We make on-brand websites that look great on mobile + desktop.</h2>
       </div>
     );
 

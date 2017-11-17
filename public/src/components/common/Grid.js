@@ -75,19 +75,19 @@ const styles = {
 
 const tilesData = [
   {
-    img: 'screenshot_bookmarc',
-    title: 'marc jacobs',
-    s1: 'Brand Strategy',
-    s2: 'Search Engine Optimization',
-    s3: 'Art + Creative Direction',
-    s4: 'Copywriting (Print + Ecommerce)',
-  }, {
     img: 'screenshot_aloha_2',
     title: 'aloha brothers',
     s1: 'Responsive Web Development',
     s2: 'Web + UI Design',
     s3: 'Brand Strategy',
     s4: 'Workflow Optimization',
+  }, {
+    img: 'screenshot_bookmarc',
+    title: 'marc jacobs',
+    s1: 'Brand Strategy',
+    s2: 'Search Engine Optimization',
+    s3: 'Art + Creative Direction',
+    s4: 'Copywriting (Print + Ecommerce)',
   }, {
     img: 'screenshot_caseyahern',
     title: 'casey ahern',
@@ -273,29 +273,22 @@ export class Grid extends React.Component {
     });
     const childElementsEmkr = GALLERY_IMAGE_SET_EMKR.map((element, idx) => {
       return (
-        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
-          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+        <div key={idx} onClick={() => this.openLightbox(idx)} >
+          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="500" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     const childElementsBookmarc = GALLERY_IMAGE_SET_MJ.map((element, idx) => {
       return (
-        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
-          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
-        </div>
-      );
-    });
-    const childElementsOther = GALLERY_IMAGE_SET_OTHER.map((element, idx) => {
-      return (
-        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
-          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+        <div key={idx} onClick={() => this.openLightbox(idx)} >
+          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="500" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     const childElementsHilton = GALLERY_IMAGE_SET_HILTON.map((element, idx) => {
       return (
-        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
-          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+        <div key={idx} onClick={() => this.openLightbox(idx)} >
+          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="500" quality="auto" crop="scale" responsive />
         </div>
       );
     });
@@ -356,7 +349,7 @@ export class Grid extends React.Component {
             </div>
           </div>
         </Modal>
-        <Modal title="case study: Aloha Brothers" visible={this.state.visible1} footer={null} onCancel={this.closeModal1} style={{ top: 50 }}>
+        <Modal title="case study: Aloha Brothers" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
@@ -430,12 +423,12 @@ export class Grid extends React.Component {
           </div>
         </div>
         </Modal>
-        <Modal title="Eventmakr" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
+        <Modal title="case study: Eventmakr" visible={this.state.visible5} footer={null} onCancel={this.closeModal5} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
-            <div className="col-sm-6 wrapper">
+            <div className="col-sm-6">
               <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+              <div style={{ width: '90%', margin: '0 auto' }}>
                 {childElementsEmkr}
                 <Lightbox
                   currentImage={this.state.currentImage}
@@ -450,14 +443,8 @@ export class Grid extends React.Component {
               </div>
             </div>
             <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
-              <div style={{ width: '90%', margin: '0 auto' }}>
-                <p>Web Development (SaaS Minimum Viable Product)</p>
-                <p>UX, Web & UI Design</p>
-                <p>Branding & Brand Strategy</p>
-                <p>Copyediting</p>
-                <p>Marketing</p>
-              </div>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                 <p>Node.js + Express</p>
@@ -480,9 +467,9 @@ export class Grid extends React.Component {
         </Modal>
         <Modal
           title="case study: Marc Jacobs"
-          visible={this.state.visible0}
+          visible={this.state.visible1}
           footer={null}
-          onCancel={this.closeModal0}
+          onCancel={this.closeModal1}
           style={{ top: 50 }}
         >
         <div className="container">
@@ -504,24 +491,20 @@ export class Grid extends React.Component {
               </div>
             </div>
               <div className="col-sm-6" style={{ padding: '3%' }}>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
-                <div style={{ width: '90%', margin: '0 auto', marginBottom: '5%' }}>
-                  <p>Brand Strategy</p>
-                  <p>Search Engine Optimization</p>
-                  <p>Art/Creative Direction</p>
-                  <p>Copywriting (Print & Ecommerce)</p>
-                </div>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
          </div>
         </Modal>
-        <Modal title="Hilton Worldwide EMEA" visible={this.state.visible5} footer={null} onCancel={this.closeModal5} style={{ top: 50 }}>
+        <Modal title="case study: Hilton Worldwide EMEA" visible={this.state.visible4} footer={null} onCancel={this.closeModal4} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
-            <div className="col-sm-6 wrapper">
+            <div className="col-sm-6">
               <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+              <div style={{ width: '90%', margin: '0 auto' }}>
                 {childElementsHilton}
                 <Lightbox
                   currentImage={this.state.currentImage}
@@ -536,12 +519,8 @@ export class Grid extends React.Component {
               </div>
             </div>
               <div className="col-sm-6" style={{ padding: '3%' }}>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
-                <div style={{ width: '90%', margin: '0 auto', marginBottom: '5%' }}>
-                  <p>Search Engine Optimization</p>
-                  <p>Content Strategy</p>
-                  <p>Copywriting for Ecommerce</p>
-                </div>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
                 <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                   <p>HTML</p>
