@@ -1,20 +1,8 @@
-const GALLERY_IMAGE_SET_ALOHA = [
+const GALLERY_IMAGE_SET_SBGL = [
   {
-    src: 'screenshot_sbgl_mobile',
+    src: 'wireframe_sbgl1',
     alt: '',
-  },
-  {
-    src: 'screenshot_sbgl3',
-    alt: '',
-  },
-  {
-    src: 'screenshot_sbgposters',
-    alt: ''
-  },
-  {
-    src: 'screenshot_sbgl4',
-    alt: 'Sketch wireframes'
   }
 ]
 
-export default GALLERY_IMAGE_SET_ALOHA;
+export default GALLERY_IMAGE_SET_SBGL;

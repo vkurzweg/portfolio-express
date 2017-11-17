@@ -1,5 +1,16 @@
 import React from "react";
+import { Image } from 'cloudinary-react';
+import styled from 'styled-components';
 
+const Div = styled.div`
+  height: 350px;
+  width: 66%;
+  margin: 0 auto;
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1510870097/palma2_logo.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+`;
 
 export class Intro extends React.Component {
 
@@ -7,9 +18,11 @@ export class Intro extends React.Component {
   render() {
 
     return (
-      <div className="container" style={{ width: '100%', backgroundColor: 'black', color: 'white', padding: '3%', fontSize: '16px' }}>
-        <h1 style={{ textAlign: 'center', color: 'white', fontSize: '36px', letterSpacing: '4px', fontFamily: 'Roboto' }}><span style={{ color: '#3D8EE2' }}>inspired website</span> creation + iteration</h1>
-        <h2 style={{ color: 'white', fontFamily: 'Roboto', fontSize: '26px', padding: '2em', letterSpacing: '3px', paddingTop: '2em' }}>Some very inspiring intro copy.</h2>
+      <div className="container" style={{ width: '100%', backgroundColor: 'black', color: 'white', padding: '1%', fontSize: '16px' }}>
+        <h1 style={{ color: 'white', fontSize: '50px', letterSpacing: '4px', fontFamily: 'Oswald', paddingTop: '3%', width: '60%', margin: '0 auto' }}><span style={{ color: '#3D8EE2' }}>inspired website</span> <br /></h1>
+        <h1 style={{ color: '#C2C979', fontSize: '50px', letterSpacing: '4px', fontFamily: 'Oswald', paddingTop: '1%', width: '60%', margin: '0 auto', textAlign: 'center' }}>creation + iteration</h1>
+        <h2 style={{ color: 'white', fontFamily: 'Josefin Sans', fontSize: '26px', padding: '1em', letterSpacing: '1px', width: '66%', margin: '0 auto', marginTop: '2%', lineHeight: '1.5em' }}>vk.digital is a branding, design, and development consultancy.</h2>
+        <h2 style={{ color: 'white', fontFamily: 'Josefin Sans', fontSize: '26px', padding: '1em', letterSpacing: '1px', width: '66%', margin: '0 auto', lineHeight: '1em', marginTop: '-2%' }}>We make on-brand websites that look great on mobile + desktop.</h2>
       </div>
     );
 
@@ -36,3 +49,7 @@ export default Intro;
 //     </ul>
 //   </div>
 // </div>
+
+// <Image style={{ maxHeight: '325px', display: 'block', margin: '0 auto'}} cloudName="kurzweg" publicId="palma2_logo" quality="auto" responsive />
+
+// <Image style={{ marginRight: '1%' }} cloudName="kurzweg" publicId="logo_white_flip" width="35" quality="auto" responsive />

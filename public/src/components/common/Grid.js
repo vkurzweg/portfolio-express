@@ -22,6 +22,28 @@ const StyledGridTile = styled(GridTile)`
   &:hover {
     outline-style: outset;
     outline-color: #108EE9;
+    cursor: pointer;
+  }
+`;
+
+const StyledImage = styled(Image)`
+  width: 100%;
+  &:hover {
+    opacity: 0;
+    cursor: pointer;
+  }
+`;
+
+const TileCopy = styled.div`
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  height: 275px;
+  opacity: 0;
+  background-color: black;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
   }
 `;
 
@@ -38,7 +60,7 @@ const styles = {
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    paddingTop: '3%',
+    paddingTop: '1%',
     backgroundColor: 'black',
   },
   gridList: {
@@ -47,21 +69,53 @@ const styles = {
     flexWrap: 'wrap',
     overflowX: 'auto',
     margin: '0 auto',
-    marginBottom: '1%'
+    marginBottom: '5%'
   },
 };
 
 const tilesData = [
   {
     img: 'screenshot_bookmarc',
+    title: 'marc jacobs',
+    s1: 'Brand Strategy',
+    s2: 'Search Engine Optimization',
+    s3: 'Art + Creative Direction',
+    s4: 'Copywriting (Print + Ecommerce)',
   }, {
-    img: 'screenshot_aloha',
+    img: 'screenshot_aloha_2',
+    title: 'aloha brothers',
+    s1: 'Responsive Web Development',
+    s2: 'Web + UI Design',
+    s3: 'Brand Strategy',
+    s4: 'Workflow Optimization',
   }, {
-    img: 'screenshot_trianonpalace1',
+    img: 'screenshot_caseyahern',
+    title: 'casey ahern',
+    s1: 'Responsive Web Development',
+    s2: 'Visual Design',
+    s3: 'Brand Strategy',
+    s4: 'Copywriting',
   }, {
     img: 'screenshot_sbgl',
+    title: 'silicon beach guitar',
+    s1: 'Responsive Web Development',
+    s2: 'Web + UI Design',
+    s3: 'Visual Design',
+    s4: 'Copyediting',
+  }, {
+    img: 'screenshot_trianonpalace1',
+    title: 'hilton worldwide EMEA',
+    s1: 'Copywriting for Ecommerce',
+    s2: 'Search Engine Optimization',
+    s3: 'Content Strategy',
+    s4: 'Content Management',
   }, {
     img: 'screenshot_emkr',
+    title: 'eventmakr',
+    s1: 'UX + Web Design',
+    s2: 'Responsive Web Development',
+    s3: 'Copyediting',
+    s4: 'Email Template Design',
   }
 ]
 
@@ -205,15 +259,15 @@ export class Grid extends React.Component {
   render() {
     const childElementsSilicon = GALLERY_IMAGE_SET_SBGL.map((element, idx) => {
       return (
-        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
-          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} quality="auto" crop="scale" responsive />
+        <div key={idx} onClick={() => this.openLightbox(idx)} >
+          <Image style={{ display: 'block', margin: '0 auto'}} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     const childElementsAloha = GALLERY_IMAGE_SET_ALOHA.map((element, idx) => {
       return (
-        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
-          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+        <div key={idx} onClick={() => this.openLightbox(idx)} >
+          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
         </div>
       );
     });
@@ -247,24 +301,30 @@ export class Grid extends React.Component {
     });
     return (
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2} cellHeight={300}>
-          <StyledGridTileHead />
+        <GridList style={styles.gridList} cols={2} cellHeight={265}>
           {tilesData.map((tile, idx) => (
             <StyledGridTile
               key={tile.img}
               onClick={this.showModal.bind(this, idx)}
             >
-              <Image style={{ width: '100%' }} cloudName="kurzweg" publicId={tile.img} quality="auto" responsive />
+              <TileCopy>
+                <h3 style={{ letterSpacing: '2px', color: '#C2C979', fontSize: '30px', textAlign: 'center', fontFamily: 'Oswald', marginTop: '5%' }}>{tile.title}</h3>
+                <p style={{ fontSize: '16px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', marginTop: '4%' }}><Image style={{ width: '20px', marginLeft: '35px', marginRight: '10px' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s1}</p>
+                <p style={{ fontSize: '16px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '20px', marginLeft: '35px', marginRight: '10px' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s2}</p>
+                <p style={{ fontSize: '16px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '20px', marginLeft: '35px', marginRight: '10px' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s3}</p>
+                <p style={{ fontSize: '16px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '20px', marginLeft: '35px', marginRight: '10px' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s4}</p>
+              </TileCopy>
+              <StyledImage style={{ height: '100%' }} cloudName="kurzweg" publicId={tile.img} quality="auto" responsive />
             </StyledGridTile>
           ))}
         </GridList>
-        <Modal title="Silicon Beach Guitar" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
+        <Modal title="case study: Silicon Beach Guitar" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
           <div className="container">
             <div className="row">
-              <div className="col-sm-6 wrapper">
-                <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-                <div className="masonry">
+              <div className="col-sm-6">
+                <div>
                   {childElementsSilicon}
+                  <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
                   <Lightbox
                     currentImage={this.state.currentImage}
                     isOpen={this.state.lightboxIsOpen}
@@ -278,12 +338,8 @@ export class Grid extends React.Component {
                 </div>
               </div>
               <div className="col-sm-6">
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
-                <div style={{ width: '85%', margin: '0 auto' }}>
-                  <p>Web Development</p>
-                  <p>UX, Web & UI Design</p>
-                  <p>Branding</p>
-                </div>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
                 <div style={{ width: '85%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                   <p>Node.js + Express</p>
@@ -300,13 +356,12 @@ export class Grid extends React.Component {
             </div>
           </div>
         </Modal>
-        <Modal title="Aloha Brothers" visible={this.state.visible1} footer={null} onCancel={this.closeModal1} style={{ top: 50 }}>
+        <Modal title="case study: Aloha Brothers" visible={this.state.visible1} footer={null} onCancel={this.closeModal1} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
-            <div className="col-sm-6 wrapper">
-              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+            <div className="col-sm-6">
                 {childElementsAloha}
+                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
                 <Lightbox
                   currentImage={this.state.currentImage}
                   isOpen={this.state.lightboxIsOpen}
@@ -317,17 +372,48 @@ export class Grid extends React.Component {
                   onClose={this.closeLightbox}
                   backdropClosesModal
                 />
-              </div>
             </div>
             <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
-              <div style={{ width: '90%', margin: '0 auto' }}>
-                <p>Web Development</p>
-                <p>Responsive Web & UI Design</p>
-                <p>Branding & Brand Strategy</p>
-                <p>Copyediting</p>
-                <p>Workflow Optimization</p>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
+              <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                <p>Node.js + Express</p>
+                <p>NPM</p>
+                <p>React + Redux</p>
+                <p>HTML5, CSS/SCSS & JavaScript</p>
+                <p>Material Design for React</p>
+                <p>Styled Components</p>
+                <p>Bootstrap</p>
+                <p>Photoshop</p>
               </div>
+            </div>
+            <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
+          </div>
+        </div>
+        </Modal>
+        <Modal title="case study: Casey Ahern" visible={this.state.visible2} footer={null} onCancel={this.closeModal2} style={{ top: 50 }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6">
+                <div onClick={() => this.openLightbox(2)} >
+                  <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId="wireframe_caseyahern" width="300" quality="auto" crop="scale" responsive />
+                </div>
+                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
+                <Lightbox
+                  currentImage={this.state.currentImage}
+                  isOpen={this.state.lightboxIsOpen}
+                  images={LIGHTBOX_IMAGE_SET_ALOHA}
+                  onClickImage={this.handleClickImage}
+                  onClickNext={this.gotoNext}
+                  onClickPrev={this.gotoPrevious}
+                  onClose={this.closeLightbox}
+                  backdropClosesModal
+                />
+            </div>
+            <div className="col-sm-6">
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
+              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                 <p>Node.js + Express</p>
@@ -393,18 +479,18 @@ export class Grid extends React.Component {
         </div>
         </Modal>
         <Modal
-          title="Marc Jacobs"
-          visible={this.state.visible2}
+          title="case study: Marc Jacobs"
+          visible={this.state.visible0}
           footer={null}
-          onCancel={this.closeModal2}
+          onCancel={this.closeModal0}
           style={{ top: 50 }}
         >
         <div className="container">
           <div className="row">
-            <div className="col-sm-6 wrapper">
-              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
+            <div className="col-sm-6">
+              <div style={{ width: '90%', margin: '0 auto' }}>
                 {childElementsBookmarc}
+                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
                 <Lightbox
                   currentImage={this.state.currentImage}
                   isOpen={this.state.lightboxIsOpen}
@@ -429,46 +515,6 @@ export class Grid extends React.Component {
             </div>
           </div>
          </div>
-        </Modal>
-        <Modal title="The Other" visible={this.state.visible4} footer={null} onCancel={this.closeModal4} style={{ top: 50 }}>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-6 wrapper">
-              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
-              <div className="masonry" style={{ width: '90%', margin: '0 auto' }}>
-                {childElementsOther}
-                <Lightbox
-                  currentImage={this.state.currentImage}
-                  isOpen={this.state.lightboxIsOpen}
-                  images={LIGHTBOX_IMAGE_SET_OTHER}
-                  onClickImage={this.handleClickImage}
-                  onClickNext={this.gotoNext}
-                  onClickPrev={this.gotoPrevious}
-                  onClose={this.closeLightbox}
-                  backdropClosesModal
-                />
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Services</p>
-              <div style={{ width: '90%', margin: '0 auto' }}>
-                <p>Web Development (General Assembly WDI Final Project)</p>
-                <p>Web & UI Design</p>
-              </div>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
-              <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
-                <p>Node.js + Express</p>
-                <p>MongoDB</p>
-                <p>Angular.js</p>
-                <p>HTML5, CSS3 & JavaScript</p>
-                <p>jQuery</p>
-                <p>Bootstrap</p>
-                <p>Sketch</p>
-              </div>
-              <a href="http://the-other.herokuapp.com/#/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
-            </div>
-          </div>
-        </div>
         </Modal>
         <Modal title="Hilton Worldwide EMEA" visible={this.state.visible5} footer={null} onCancel={this.closeModal5} style={{ top: 50 }}>
         <div className="container">
@@ -530,3 +576,5 @@ export default Grid;
 //   <p>some contents...</p>
 //   <p>some contents...</p>
 // </Modal>
+
+

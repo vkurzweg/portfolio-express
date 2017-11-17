@@ -1,11 +1,7 @@
 const LIGHTBOX_IMAGE_SET_ALOHA = [
   {
-    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1496636463/screenshot_aloha.png',
-    caption: 'Landing page for desktop and large screens, featuring full-screen video',
-  },
-  {
-    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1498767612/screenshot_alohamobile.png',
-    caption: 'Landing page for mobile, featuring image slider',
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1510890754/wireframe_aloha.png',
+    caption: 'Landing page for mobile',
   },
   {
     src: 'http://res.cloudinary.com/kurzweg/image/upload/v1496636459/screenshot_aloha3.png',
