@@ -75,8 +75,8 @@ const styles = {
 
 const tilesData = [
   {
-    img: 'screenshot_aloha_2',
-    title: 'aloha brothers',
+    img: 'aloha_screenshot',
+    title: 'aloha brothers surf',
     s1: 'Responsive Web Development',
     s2: 'Web + UI Design',
     s3: 'Brand Strategy',
@@ -89,19 +89,19 @@ const tilesData = [
     s3: 'Art + Creative Direction',
     s4: 'Copywriting (Print + Ecommerce)',
   }, {
-    img: 'screenshot_caseyahern',
-    title: 'casey ahern',
-    s1: 'Responsive Web Development',
-    s2: 'Visual Design',
-    s3: 'Brand Strategy',
-    s4: 'Copywriting',
-  }, {
     img: 'screenshot_sbgl',
     title: 'silicon beach guitar',
     s1: 'Responsive Web Development',
     s2: 'Web + UI Design',
     s3: 'Visual Design',
     s4: 'Copyediting',
+  }, {
+    img: 'screenshot_caseyahern',
+    title: 'casey ahern',
+    s1: 'Responsive Web Development',
+    s2: 'Visual Design',
+    s3: 'Brand Strategy',
+    s4: 'Copywriting',
   }, {
     img: 'screenshot_trianonpalace1',
     title: 'hilton worldwide EMEA',
@@ -260,14 +260,14 @@ export class Grid extends React.Component {
     const childElementsSilicon = GALLERY_IMAGE_SET_SBGL.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
-          <Image style={{ display: 'block', margin: '0 auto'}} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+          <Image style={{ display: 'block', margin: '0 auto'}} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     const childElementsAloha = GALLERY_IMAGE_SET_ALOHA.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
-          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
+          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
         </div>
       );
     });
@@ -294,7 +294,7 @@ export class Grid extends React.Component {
     });
     return (
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2} cellHeight={265}>
+        <GridList style={styles.gridList} cols={2} cellHeight={275}>
           {tilesData.map((tile, idx) => (
             <StyledGridTile
               key={tile.img}
@@ -311,7 +311,7 @@ export class Grid extends React.Component {
             </StyledGridTile>
           ))}
         </GridList>
-        <Modal title="case study: Silicon Beach Guitar" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
+        <Modal title="case study: Silicon Beach Guitar" visible={this.state.visible2} footer={null} onCancel={this.closeModal2} style={{ top: 50 }}>
           <div className="container">
             <div className="row">
               <div className="col-sm-6">
@@ -385,12 +385,12 @@ export class Grid extends React.Component {
           </div>
         </div>
         </Modal>
-        <Modal title="case study: Casey Ahern" visible={this.state.visible2} footer={null} onCancel={this.closeModal2} style={{ top: 50 }}>
+        <Modal title="case study: Casey Ahern" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
                 <div onClick={() => this.openLightbox(2)} >
-                  <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId="wireframe_caseyahern" width="300" quality="auto" crop="scale" responsive />
+                  <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId="wireframe_caseyahern" width="250" quality="auto" crop="scale" responsive />
                 </div>
                 <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
                 <Lightbox
@@ -427,9 +427,9 @@ export class Grid extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
               <div style={{ width: '90%', margin: '0 auto' }}>
                 {childElementsEmkr}
+                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%' }}><em>Click for more images</em></p>
                 <Lightbox
                   currentImage={this.state.currentImage}
                   isOpen={this.state.lightboxIsOpen}
@@ -503,9 +503,9 @@ export class Grid extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <p style={{ textAlign: 'center', fontSize: '10px', marginBottom: '1%' }}><em>Click any image to enlarge</em></p>
               <div style={{ width: '90%', margin: '0 auto' }}>
                 {childElementsHilton}
+                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
                 <Lightbox
                   currentImage={this.state.currentImage}
                   isOpen={this.state.lightboxIsOpen}
