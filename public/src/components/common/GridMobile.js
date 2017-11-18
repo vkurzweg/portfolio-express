@@ -38,7 +38,7 @@ const TileCopy = styled.div`
   position: absolute;
   width: 100%;
   margin: 0 auto;
-  height: 275px;
+  height: 125px;
   opacity: 0;
   background-color: black;
   &:hover {
@@ -301,11 +301,11 @@ export class Grid extends React.Component {
               onClick={this.showModal.bind(this, idx)}
             >
               <TileCopy>
-                <h3 style={{ letterSpacing: '2px', color: '#C2C979', fontSize: '30px', textAlign: 'center', fontFamily: 'Oswald', marginTop: '5%' }}>{tile.title}</h3>
-                <p style={{ fontSize: '18px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', marginTop: '4%' }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s1}</p>
-                <p style={{ fontSize: '18px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s2}</p>
-                <p style={{ fontSize: '18px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s3}</p>
-                <p style={{ fontSize: '18px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s4}</p>
+                <h3 style={{ letterSpacing: '2px', color: '#C2C979', fontSize: '16px', textAlign: 'center', fontFamily: 'Oswald', paddingTop: '5%', width: '80%', margin: '0 auto' }}>{tile.title}</h3>
+                <p style={{ marginLeft: '10%', fontSize: '8px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', marginTop: '4%' }}>{tile.s1}</p>
+                <p style={{ marginLeft: '10%', fontSize: '8px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>{tile.s2}</p>
+                <p style={{ marginLeft: '10%', fontSize: '8px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>{tile.s3}</p>
+                <p style={{ marginLeft: '10%', fontSize: '8px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>{tile.s4}</p>
               </TileCopy>
               <StyledImage style={{ height: '100%' }} cloudName="kurzweg" publicId={tile.img} quality="auto" responsive />
             </StyledGridTile>
@@ -331,8 +331,6 @@ export class Grid extends React.Component {
                 </div>
               </div>
               <div className="col-sm-6">
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
                 <div style={{ width: '85%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                   <p>Node.js + Express</p>
@@ -367,8 +365,6 @@ export class Grid extends React.Component {
                 />
             </div>
             <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                 <p>Node.js + Express</p>
@@ -405,8 +401,6 @@ export class Grid extends React.Component {
                 />
             </div>
             <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                 <p>Node.js + Express</p>
@@ -443,8 +437,6 @@ export class Grid extends React.Component {
               </div>
             </div>
             <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                 <p>Node.js + Express</p>
@@ -491,8 +483,6 @@ export class Grid extends React.Component {
               </div>
             </div>
               <div className="col-sm-6" style={{ padding: '3%' }}>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
@@ -519,15 +509,12 @@ export class Grid extends React.Component {
               </div>
             </div>
               <div className="col-sm-6" style={{ padding: '3%' }}>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
                 <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                   <p>HTML</p>
                   <p>WordPress</p>
                   <p>Google AdWords</p>
                 </div>
-              <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
         </div>
@@ -556,4 +543,6 @@ export default Grid;
 //   <p>some contents...</p>
 // </Modal>
 
+// <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
+// <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
 

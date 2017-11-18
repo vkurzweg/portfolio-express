@@ -110,9 +110,11 @@
   text-transform: lowercase;
   letter-spacing: 2px;
   font-family: 'Oswald';
+  line-height: 1em !important;
 }
 
 .ant-modal-content {
+  background-color: #FAFAFA !important;
 }
 
 .ant-modal-body {

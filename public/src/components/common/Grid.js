@@ -331,8 +331,6 @@ export class Grid extends React.Component {
                 </div>
               </div>
               <div className="col-sm-6">
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
                 <div style={{ width: '85%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                   <p>Node.js + Express</p>
@@ -367,8 +365,6 @@ export class Grid extends React.Component {
                 />
             </div>
             <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                 <p>Node.js + Express</p>
@@ -390,7 +386,7 @@ export class Grid extends React.Component {
           <div className="row">
             <div className="col-sm-6">
                 <div onClick={() => this.openLightbox(2)} >
-                  <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId="wireframe_caseyahern" width="250" quality="auto" crop="scale" responsive />
+                  <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId="casey_wireframe" width="250" quality="auto" crop="scale" responsive />
                 </div>
                 <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
                 <Lightbox
@@ -404,7 +400,7 @@ export class Grid extends React.Component {
                   backdropClosesModal
                 />
             </div>
-            <div className="col-sm-6">
+            <div className="col-sm-6" style={{ paddingRight: '5%' }}>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
@@ -419,7 +415,7 @@ export class Grid extends React.Component {
                 <p>Photoshop</p>
               </div>
             </div>
-            <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
+            <a href="http://www.caseyahern.com" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center', paddingRight: '5%' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
           </div>
         </div>
         </Modal>
@@ -443,8 +439,6 @@ export class Grid extends React.Component {
               </div>
             </div>
             <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                 <p>Node.js + Express</p>
@@ -491,8 +485,6 @@ export class Grid extends React.Component {
               </div>
             </div>
               <div className="col-sm-6" style={{ padding: '3%' }}>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
@@ -519,8 +511,6 @@ export class Grid extends React.Component {
               </div>
             </div>
               <div className="col-sm-6" style={{ padding: '3%' }}>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
                 <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                   <p>HTML</p>
@@ -556,4 +546,6 @@ export default Grid;
 //   <p>some contents...</p>
 // </Modal>
 
+// <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
+// <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
 

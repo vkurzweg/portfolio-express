@@ -37,10 +37,11 @@ export default class Nav extends React.Component {
     let display = 'none';
     (this.state.showMenu) ? display = 'block' : display = 'none';
     const github = <div style={{ display: 'inline-flex', marginTop: '6%' }}>
-                      <a href="https://www.linkedin.com/in/victoriakurzweg/" target="blank"><img src="/media/linkedin.png" style={{ width: '20px', paddingRight: '10%' }} /></a>
-                      <a href="https://github.com/vkurzweg" target="blank" ><Icon type="github" style={{ color: 'white', fontSize: '20px', paddingLeft: '30%'}} /></a>
+                      <a style={{ padding: '5%' }} href="https://github.com/vkurzweg" target="blank" ><Icon type="github" style={{ color: 'white', fontSize: '20px', paddingLeft: '30%'}} /></a>
+                      <a style={{ padding: '5%' }} href="https://www.linkedin.com/in/victoriakurzweg/" target="blank"><img src="/media/linkedin.png" style={{ width: '20px', paddingRight: '10%' }} /></a>
+                      <a style={{ padding: '5%' }} href="https://www.instagram.com/victoria.kurzweg/" target="blank"><img src="/media/instagram.png" style={{ width: '20px' }} /></a>
                     </div>
-    const brand = <a href="/" style={{ color: 'white', fontFamily: 'Oswald', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '18px' }}>vk digital <Image style={{ width: '20px', marginLeft: '-3px', marginTop: '-2px' }} cloudName="kurzweg" publicId="vklogo_mock_blue" quality="auto" crop="scale" responsive /></a>
+    const brand = <a href="/" style={{ color: 'white', fontFamily: 'Oswald', letterSpacing: '2px', fontSize: '20px' }}>vk.digital <Image style={{ width: '30px', marginLeft: '-10px', marginTop: '-3px' }} cloudName="kurzweg" publicId="logot_edit" quality="auto" crop="scale" responsive /></a>
     return (
       <div style={{ position: 'fixed', width: '100%', zIndex: '10' }}>
         <AppBar
@@ -48,7 +49,7 @@ export default class Nav extends React.Component {
             style={{ width: '100%', backgroundColor: 'black' }}
             onLeftIconButtonTouchTap={this.toggleMenu}
             iconElementRight={github}
-            iconStyleRight={{ marginTop: '5%', marginRight: '1.5%'}}
+            iconStyleRight={{ marginTop: '3%', marginRight: '1.5%'}}
             onRightIconButtonTouchTap={this.handleGitTap}
           />
         <div style={{ display }}>
