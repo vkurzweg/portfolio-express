@@ -4,11 +4,12 @@ import NavMobile from './common/NavMobile';
 import CopyCarousel from './common/CopyCarousel';
 import Dev from './common/Dev';
 import DevMobile from './common/DevMobile';
-import GridCases from './common/GridCases';
 import Grid from './common/Grid';
+import GridMobile from './common/GridMobile';
 import Intro from './common/Intro';
 import IntroMobile from './common/IntroMobile';
 import Bio from './common/Bio';
+import BioMobile from './common/BioMobile';
 import MediaQuery from 'react-responsive';
 import Intro2 from './common/Intro2';
 import Intro2Mobile from './common/Intro2Mobile';
@@ -52,11 +53,10 @@ export class Home extends React.Component {
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <NavMobile />
-          <Image cloudName="kurzweg" publicId="cherryblossom_bwcrop" quality="auto" responsive style={{ width: '100%' }} />
-          <IntroMobile />
-          <Grid />
           <Image cloudName="kurzweg" publicId="palmtrees" quality="auto" responsive style={{ width: '100%' }} />
-          <Bio
+          <IntroMobile />
+          <GridMobile />
+          <BioMobile
             toggleForm={this.toggleForm}
             isFormActive={this.state.isFormActive}
           />

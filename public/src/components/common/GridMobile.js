@@ -64,7 +64,7 @@ const styles = {
     backgroundColor: 'black',
   },
   gridList: {
-    width: '85%',
+    width: '95%',
     display: 'flex',
     flexWrap: 'wrap',
     overflowX: 'auto',
@@ -260,41 +260,41 @@ export class Grid extends React.Component {
     const childElementsSilicon = GALLERY_IMAGE_SET_SBGL.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
-          <Image style={{ display: 'block', margin: '0 auto'}} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
+          <Image style={{ display: 'block', margin: '0 auto'}} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="150" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     const childElementsAloha = GALLERY_IMAGE_SET_ALOHA.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
-          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
+          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="150" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     const childElementsEmkr = GALLERY_IMAGE_SET_EMKR.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
-          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="500" quality="auto" crop="scale" responsive />
+          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     const childElementsBookmarc = GALLERY_IMAGE_SET_MJ.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
-          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="500" quality="auto" crop="scale" responsive />
+          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     const childElementsHilton = GALLERY_IMAGE_SET_HILTON.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
-          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="500" quality="auto" crop="scale" responsive />
+          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     return (
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2} cellHeight={275}>
+        <GridList style={styles.gridList} cols={2} cellHeight={125}>
           {tilesData.map((tile, idx) => (
             <StyledGridTile
               key={tile.img}
@@ -390,7 +390,7 @@ export class Grid extends React.Component {
           <div className="row">
             <div className="col-sm-6">
                 <div onClick={() => this.openLightbox(2)} >
-                  <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId="wireframe_caseyahern" width="250" quality="auto" crop="scale" responsive />
+                  <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId="wireframe_caseyahern" width="150" quality="auto" crop="scale" responsive />
                 </div>
                 <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
                 <Lightbox
