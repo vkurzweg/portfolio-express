@@ -94,7 +94,7 @@ const tilesData = [
     s1: 'Responsive Web Development',
     s2: 'Web + UI Design',
     s3: 'Visual Design',
-    s4: 'Copyediting',
+    s4: 'Branding',
   }, {
     img: 'screenshot_caseyahern',
     title: 'casey ahern',
@@ -317,7 +317,7 @@ export class Grid extends React.Component {
               <div className="col-sm-6">
                 <div>
                   {childElementsSilicon}
-                  <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
+                  <p style={{ textAlign: 'center', fontSize: '18px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click image for more</p>
                   <Lightbox
                     currentImage={this.state.currentImage}
                     isOpen={this.state.lightboxIsOpen}
@@ -331,19 +331,25 @@ export class Grid extends React.Component {
                 </div>
               </div>
               <div className="col-sm-6">
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
-                <div style={{ width: '85%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
-                  <p>Node.js + Express</p>
-                  <p>NPM</p>
-                  <p>React + Redux</p>
-                  <p>HTML, CSS/SCSS & JavaScript</p>
-                  <p>Styled Components</p>
-                  <p>Bootstrap</p>
-                  <p>Photoshop</p>
-                  <p>Sketch</p>
+                <div style={{ width: '95%', margin: '0 auto' }}>
+                  <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenges</p>
+                  <p>Ali Memarian writes and produces songs for feature films, award-winning television shows, and commercial advertisements. While pursuing a PhD in Musicology, Ali was inspired to become an educator himself and needed the digital infrastructure to get started.</p>
+                  <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solutions</p>
+                  <p>First we created wireframes to illustrate Ali’s vision for his curriculum and offerings. Compared to his competitors in the L.A. area, Ali offered a wider range of courses including composition and music production, so we created a custom user interface to highlight this scope. The result was a fully responsive website through which Ali could present and promote his new services to the many aspiring musicians, songwriters and producers in his area.</p>
+                  <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Technologies</p>
+                  <div style={{ width: '85%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                    <p>Node.js + Express</p>
+                    <p>NPM</p>
+                    <p>React + Redux</p>
+                    <p>HTML, CSS/SCSS & JavaScript</p>
+                    <p>Styled Components</p>
+                    <p>Bootstrap</p>
+                    <p>Photoshop</p>
+                    <p>Sketch</p>
+                  </div>
                 </div>
               </div>
-              <a href="https://www.siliconbeachguitar.com/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
+              <a href="https://www.siliconbeachguitar.com/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '80%', margin: '0 auto', padding: '3%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
         </Modal>
@@ -421,7 +427,7 @@ export class Grid extends React.Component {
                 <p>Photoshop</p>
               </div>
             </div>
-            <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
+            <a href="http://caseyahern.com" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '80%', margin: '0 auto', padding: '3%', textAlign: 'center' }}>VISIT</button></a>
           </div>
         </div>
         </Modal>
@@ -461,7 +467,6 @@ export class Grid extends React.Component {
                 <p>Sketch</p>
               </div>
             </div>
-            <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
           </div>
         </div>
         </Modal>
@@ -492,7 +497,7 @@ export class Grid extends React.Component {
             </div>
               <div className="col-sm-6" style={{ padding: '3%' }}>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
-              <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
+              <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '80%', margin: '0 auto', padding: '3%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
          </div>
@@ -523,6 +528,7 @@ export class Grid extends React.Component {
                   <p>WordPress</p>
                   <p>Google AdWords</p>
                 </div>
+                <a href="#" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '80%', margin: '0 auto', padding: '3%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
         </div>
