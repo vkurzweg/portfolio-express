@@ -21,7 +21,7 @@ export class Intro extends React.Component {
       <div className="container" style={{ width: '100%', backgroundColor: 'black', color: 'white', padding: '1%', fontSize: '16px' }}>
         <h1 style={{ color: 'white', fontSize: '50px', letterSpacing: '4px', fontFamily: 'Oswald', paddingTop: '3%', width: '60%', margin: '0 auto' }}><span style={{ color: '#3D8EE2' }}>responsive website</span> <br /></h1>
         <h2 style={{ color: '#C2C979', fontSize: '50px', letterSpacing: '4px', fontFamily: 'Oswald', paddingTop: '1%', width: '60%', margin: '0 auto', textAlign: 'center' }}>creation + iteration</h2>
-        <h3 style={{ color: 'white', fontFamily: 'Share', fontSize: '26px', padding: '1em', letterSpacing: '1px', width: '70%', margin: '0 auto', marginTop: '2%', lineHeight: '1.5em' }}>VK Digital is a branding, design, and development consultancy. We specialize in making on-brand websites that look great on mobile + desktop.</h3>
+        <h3 style={{ color: 'white', fontFamily: 'Share', fontSize: '24px', padding: '1em', letterSpacing: '1px', width: '75%', margin: '0 auto', marginTop: '2%', lineHeight: '1.5em' }}>VK Digital is a branding, design, and development consultancy. We specialize in making on-brand websites that look great on mobile + desktop.</h3>
       </div>
     );
 

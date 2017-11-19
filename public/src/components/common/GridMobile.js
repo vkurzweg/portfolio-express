@@ -352,7 +352,7 @@ export class Grid extends React.Component {
           <div className="row">
             <div className="col-sm-6">
                 {childElementsAloha}
-                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
+                <p style={{ textAlign: 'center', fontSize: '18px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click image for before & after shots</p>
                 <Lightbox
                   currentImage={this.state.currentImage}
                   isOpen={this.state.lightboxIsOpen}
@@ -365,19 +365,27 @@ export class Grid extends React.Component {
                 />
             </div>
             <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
-              <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
-                <p>Node.js + Express</p>
-                <p>NPM</p>
-                <p>React + Redux</p>
-                <p>HTML5, CSS/SCSS & JavaScript</p>
-                <p>Material Design for React</p>
-                <p>Styled Components</p>
-                <p>Bootstrap</p>
-                <p>Photoshop</p>
+              <div style={{ width: '95%', margin: '0 auto' }}>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenges</p>
+                <p>The top-reviewed surf lesson business in the L.A. market, Aloha Brothers Surf Lessons has built its brand on digital platforms including Yelp and TripAdvisor. After a sharp increase in new competitors, the company wanted to broaden its digital presence and enable the brand and business to continue to grow.</p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solutions</p>
+                <p>Aloha Brothers had outgrown its website, which was functional but several years old. We redesigned, expanded, and rebuilt the entire site, then relaunched on a shorter, more eye-catching domain, alohabrothers.surf. Key improvements included a technology upgrade to Node and React, leveraging modern UI components. We also made a number of optimizations resulting in a 93% increase in page speed. The new site is completely responsive, with separate versions for mobile, desktop, and large screens.</p>
+                <p style={{ marginTop: '3%' }}>The new website also helped facilitate the expansion of Aloha Brothers’ service offerings, with new pages for surf retreats and instructors in Hawaii, as well as a microsite for surfboard repair.</p>
+                <p style={{ marginTop: '3%' }}>While working closely with Aloha Brothers on the new site, we noticed another opportunity for improvement: the company’s time-consuming and cumbersome process of scheduling surf lessons. We improved the efficiency of their system dramatically by moving it to the cloud, leveraging applications including Google Drive, Calendar, and Maps.</p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Technologies</p>
+                <div style={{ width: '70%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                  <p>Node.js + Express</p>
+                  <p>NPM</p>
+                  <p>React + Redux</p>
+                  <p>HTML5, CSS/SCSS & JavaScript</p>
+                  <p>Material Design for React</p>
+                  <p>Styled Components</p>
+                  <p>Bootstrap</p>
+                  <p>Photoshop</p>
+                </div>
               </div>
+              <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '80%', margin: '0 auto', padding: '3%', textAlign: 'center' }}>VISIT</button></a>
             </div>
-            <a href="http://alohabrothers.surf/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
           </div>
         </div>
         </Modal>
