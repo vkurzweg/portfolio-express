@@ -12,7 +12,7 @@ export class Bio extends React.Component {
       <div id="bio" className="container" style={{ width: '100%', backgroundColor: 'black', color: '#FAFAFA', textAlign: 'center', fontSize: '16px', marginTop: '-2%', padding: '0' }}>
         <div className="row" style={{ width: '100%', margin: '0 auto' }}>
           <div className="col-sm-6" style={{ display: 'block', margin: '0 auto' }}>
-            <Image cloudName="kurzweg" publicId="robles_crop" quality="auto" responsive alt="Victoria Kurzweg" style={{ width: '80%', paddingTop: '10%', display: 'block', margin: '0 auto'}} />
+            <Image cloudName="kurzweg" publicId="portrait" quality="auto" responsive alt="Victoria Kurzweg" style={{ width: '80%', paddingTop: '10%', display: 'block', margin: '0 auto'}} />
           </div>
           <div className="col-sm-6" style={{ marginTop: '3%', marginLeft: '3%', paddingBottom: '3%' }}>
             <h1 style={{ color: 'white', fontSize: '30px', letterSpacing: '4.5px', marginLeft: '2%', fontFamily: 'Oswald', paddingTop: '3%', margin: '0 auto', textAlign: 'center', marginBottom: '5%' }}><span style={{ color: '#3D8EE2' }}>about</span> <br /></h1>

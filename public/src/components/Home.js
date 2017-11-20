@@ -53,7 +53,7 @@ export class Home extends React.Component {
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <NavMobile />
-          <Image cloudName="kurzweg" publicId="palma_crop" quality="auto" responsive style={{ width: '100%', marginTop: '10%' }} />
+          <Image cloudName="kurzweg" publicId="palmtrees" quality="auto" responsive style={{ width: '100%', marginTop: '10%' }} />
           <IntroMobile />
           <GridMobile />
           <BioMobile

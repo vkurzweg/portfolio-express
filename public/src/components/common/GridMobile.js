@@ -295,7 +295,7 @@ export class Grid extends React.Component {
     });
     return (
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={1} cellHeight={125}>
+        <GridList style={styles.gridList} cols={1} cellHeight={160}>
           {tilesData.map((tile, idx) => (
             <StyledGridTile
               key={tile.img}
