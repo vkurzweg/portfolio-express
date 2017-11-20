@@ -64,7 +64,8 @@ const styles = {
     backgroundColor: 'black',
   },
   gridList: {
-    width: '95%',
+    width: '75%',
+    height: '420px',
     display: 'flex',
     flexWrap: 'wrap',
     overflowX: 'auto',
@@ -294,7 +295,7 @@ export class Grid extends React.Component {
     });
     return (
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2} cellHeight={125}>
+        <GridList style={styles.gridList} cols={1} cellHeight={125}>
           {tilesData.map((tile, idx) => (
             <StyledGridTile
               key={tile.img}
@@ -405,10 +406,7 @@ export class Grid extends React.Component {
             </div>
             <div className="col-sm-6">
               <div style={{ width: '95%', margin: '0 auto' }}>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenges</p>
-                <p></p>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solutions</p>
-                <p></p>
+                <p style={{ fontSize: '16px', fontWeight: 'bold', fontStyle: 'italic', textAlign: 'center', marginTop: '5%', padding: '3%' }}>Currently in development!</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Technologies</p>
                 <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                   <p>Squarespace</p>
