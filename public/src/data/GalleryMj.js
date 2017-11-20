@@ -1,6 +1,6 @@
 const GALLERY_IMAGE_SET_MJ = [
   {
-    src: 'wireframe_bookmarc',
+    src: 'bookmarc_wireframe2',
     alt: '',
   }
 

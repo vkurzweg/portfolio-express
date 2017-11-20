@@ -37,7 +37,7 @@ export default class Nav extends React.Component {
     let display = 'none';
     (this.state.showMenu) ? display = 'block' : display = 'none';
     const github = <div style={{ display: 'inline-flex', marginTop: '6%' }}>
-                      <a style={{ padding: '5%' }} href="https://github.com/vkurzweg" target="blank" ><Icon type="github" style={{ color: 'white', fontSize: '20px', paddingLeft: '30%'}} /></a>
+                      <a style={{ padding: '5%' }} href="https://github.com/vkurzweg" target="blank" ><Icon type="github" style={{ color: 'white', fontSize: '20px', paddingRight: '10%'}} /></a>
                       <a style={{ padding: '5%' }} href="https://www.linkedin.com/in/victoriakurzweg/" target="blank"><img src="/media/linkedin.png" style={{ width: '20px', paddingRight: '10%' }} /></a>
                       <a style={{ padding: '5%' }} href="https://www.instagram.com/victoria.kurzweg/" target="blank"><img src="/media/instagram.png" style={{ width: '20px' }} /></a>
                     </div>

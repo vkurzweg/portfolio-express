@@ -317,7 +317,7 @@ export class Grid extends React.Component {
               <div className="col-sm-4">
                 <div>
                   {childElementsSilicon}
-                  <p style={{ textAlign: 'center', fontSize: '24px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click image for more</p>
+                  <p style={{ textAlign: 'center', fontSize: '24px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click image for screenshots</p>
                   <Lightbox
                     currentImage={this.state.currentImage}
                     isOpen={this.state.lightboxIsOpen}
@@ -335,7 +335,7 @@ export class Grid extends React.Component {
                   <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
                   <p>Ali Memarian writes and produces songs for feature films, award-winning television shows, and commercial advertisements. While pursuing a PhD in Musicology, Ali was inspired to become an educator himself and needed the digital infrastructure to get started.</p>
                   <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
-                  <p>First we created wireframes to illustrate Ali’s vision for his curriculum and offerings. Compared to his competitors in the L.A. area, Ali offered a wider range of courses including composition and music production, so we created a custom user interface to highlight this scope. The result was a fully responsive website through which Ali could present and promote his new services to the many aspiring musicians, songwriters and producers in his area.</p>
+                  <p>First we created wireframes to illustrate Ali’s vision for his curriculum and offerings. Compared to his competitors in the L.A. area, Ali offered a wider range of courses including composition and music production, so we created a custom user interface to highlight this scope. The result was a fully responsive website through which Ali could present and promote his new services to the many aspiring musicians, songwriters and producers in his market.</p>
                   <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
                   <div style={{ width: '85%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                     <p>Node.js + Express</p>
@@ -402,30 +402,16 @@ export class Grid extends React.Component {
                 <div onClick={() => this.openLightbox(2)} >
                   <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId="casey_wireframe" width="250" quality="auto" crop="scale" responsive />
                 </div>
-                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
-                <Lightbox
-                  currentImage={this.state.currentImage}
-                  isOpen={this.state.lightboxIsOpen}
-                  images={LIGHTBOX_IMAGE_SET_ALOHA}
-                  onClickImage={this.handleClickImage}
-                  onClickNext={this.gotoNext}
-                  onClickPrev={this.gotoPrevious}
-                  onClose={this.closeLightbox}
-                  backdropClosesModal
-                />
             </div>
             <div className="col-sm-6" style={{ paddingRight: '5%' }}>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
+              <p style={{ fontSize: '20px', fontWeight: 'bold', fontStyle: 'italic', textAlign: 'center', marginTop: '10%', padding: '3%' }}>Currently in development!</p>
               <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
               <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
-                <p>Node.js + Express</p>
-                <p>NPM</p>
-                <p>React + Redux</p>
-                <p>HTML5, CSS/SCSS & JavaScript</p>
-                <p>Material Design for React</p>
-                <p>Styled Components</p>
-                <p>Bootstrap</p>
+                <p>Squarespace</p>
+                <p>JSON-T</p>
+                <p>HTML5 & CSS</p>
+                <p>Git</p>
+                <p>Node.js + Express + React (for site teaser)</p>
                 <p>Photoshop</p>
               </div>
             </div>
@@ -436,7 +422,7 @@ export class Grid extends React.Component {
         <Modal title="case study: Eventmakr" visible={this.state.visible5} footer={null} onCancel={this.closeModal5} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
-            <div className="col-sm-6">
+            <div className="col-sm-5">
               <div style={{ width: '90%', margin: '0 auto' }}>
                 {childElementsEmkr}
                 <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%' }}><em>Click for more images</em></p>
@@ -452,24 +438,30 @@ export class Grid extends React.Component {
                 />
               </div>
             </div>
-            <div className="col-sm-6">
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
-              <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
-                <p>Node.js + Express</p>
-                <p>MongoDB</p>
-                <p>NPM</p>
-                <p>React + Redux</p>
-                <p>HTML5, CSS/SCSS & JavaScript</p>
-                <p>Material Design for React</p>
-                <p>Stripe.js</p>
-                <p>Google Maps API</p>
-                <p>Firebase</p>
-                <p>Bootstrap</p>
-                <p>Photoshop</p>
-                <p>Sketch</p>
+            <div className="col-sm-7">
+              <div style={{ width: '95%', margin: '0 auto' }}>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenges</p>
+                <p></p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solutions</p>
+                <p></p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Technologies</p>
+                <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                  <p>Node.js + Express</p>
+                  <p>MongoDB</p>
+                  <p>NPM</p>
+                  <p>React + Redux</p>
+                  <p>HTML5, CSS/SCSS & JavaScript</p>
+                  <p>Material Design for React</p>
+                  <p>Stripe.js</p>
+                  <p>Google Maps API</p>
+                  <p>Firebase</p>
+                  <p>Bootstrap</p>
+                  <p>Photoshop</p>
+                  <p>Sketch</p>
+                </div>
+              <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
               </div>
             </div>
-            <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
           </div>
         </div>
         </Modal>
@@ -482,10 +474,10 @@ export class Grid extends React.Component {
         >
         <div className="container">
           <div className="row">
-            <div className="col-sm-5">
+            <div style={{ marginTop: '8%' }} className="col-sm-5">
               <div style={{ width: '100%', margin: '0 auto' }}>
                 {childElementsBookmarc}
-                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
+                <p style={{ textAlign: 'center', fontSize: '24px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click image for more</p>
                 <Lightbox
                   currentImage={this.state.currentImage}
                   isOpen={this.state.lightboxIsOpen}
@@ -498,9 +490,15 @@ export class Grid extends React.Component {
                 />
               </div>
             </div>
-              <div className="col-sm-7" style={{ padding: '3%' }}>
-              <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
-              <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
+            <div className="col-sm-7" style={{ padding: '3%' }}>
+              <div style={{ width: '75%', margin: '0 auto' }}>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenges</p>
+                <p>Bookmarc is an art book retailer, gallery, and lifestyle brand owned by global fashion company Marc Jacobs. Known for its celebrity book signings and creative visual merchandising, Bookmarc had developed a unique brand identity in the Marc Jacobs network. Outside of its brick and mortars, however, Bookmarc needed a stronger presence in order to survive in an increasingly digital world.</p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solutions</p>
+                <p>We approached an audit of the Bookmarc website from a search marketing perspective, but our recommendations sparked a complete overhaul of the brand’s microsite. Working with Bookmarc directors in LA and Marc Jacobs headquarters in NYC, we updated site content, helped revise site structure, and expanded ecommerce offerings, providing product selections and optimized copy.</p>
+                <p style={{ marginTop: '2%' }}>We also proposed a new marketing tool that would leverage the brand’s preferred medium: print. Working again with Bookmarc leadership and Marc Jacobs HQ, we created a print catalog for distribution to top clients and influencers. VK leveraged extensive knowledge of Bookmarc’s in-store selection to help curate the catalog, selecting products to feature, developing themes for product organization/presentation, and co-creating mockups for product photography. All copy for the catalog was also written by VK.</p>
+              </div>
+              <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center', marginTop: '3%' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
          </div>
@@ -508,7 +506,7 @@ export class Grid extends React.Component {
         <Modal title="case study: Hilton Worldwide EMEA" visible={this.state.visible4} footer={null} onCancel={this.closeModal4} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
-            <div className="col-sm-6">
+            <div className="col-sm-5">
               <div style={{ width: '90%', margin: '0 auto' }}>
                 {childElementsHilton}
                 <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
@@ -524,14 +522,20 @@ export class Grid extends React.Component {
                 />
               </div>
             </div>
-              <div className="col-sm-6" style={{ padding: '3%' }}>
-                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
-                <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
-                  <p>HTML</p>
-                  <p>WordPress</p>
-                  <p>Google AdWords</p>
+              <div className="col-sm-7" style={{ padding: '3%' }}>
+                <div style={{ width: '95%', margin: '0 auto' }}>
+                  <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenges</p>
+                  <p></p>
+                  <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solutions</p>
+                  <p></p>
+                  <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Technologies</p>
+                  <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                    <p>HTML</p>
+                    <p>WordPress</p>
+                    <p>Google AdWords</p>
+                  </div>
                 </div>
-              <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
+                <a href="https://www.marcjacobs.com/bookmarc/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
         </div>
