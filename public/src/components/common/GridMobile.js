@@ -38,7 +38,7 @@ const TileCopy = styled.div`
   position: absolute;
   width: 100%;
   margin: 0 auto;
-  height: 125px;
+  height: 160px;
   opacity: 0;
   background-color: black;
   &:hover {

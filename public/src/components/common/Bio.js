@@ -11,10 +11,10 @@ export class Bio extends React.Component {
     return (
       <div id="bio" className="container" style={{ width: '100%', backgroundColor: 'black', color: '#FAFAFA', textAlign: 'center', fontSize: '16px', marginTop: '-2%' }}>
         <div className="row" style={{ width: '100%', margin: '0 auto', display: 'inline-flex' }}>
-          <div className="col-sm-6" style={{ display: 'block', margin: '0 auto' }}>
-            <Image cloudName="kurzweg" publicId="portrait" quality="auto" responsive alt="Victoria Kurzweg" style={{ maxHeight: '300px', maxWidth: '100%', paddingTop: '5%', display: 'block', margin: '0 auto'}} />
+          <div className="col-sm-5" style={{ display: 'block', margin: '0 auto' }}>
+            <Image cloudName="kurzweg" publicId="self" quality="auto" responsive alt="Victoria Kurzweg" style={{ maxHeight: '350px', maxWidth: '100%', paddingTop: '5%', display: 'block', margin: '0 auto'}} />
           </div>
-          <div className="col-sm-6" style={{ marginTop: '3%', marginLeft: '3%', paddingBottom: '3%' }}>
+          <div className="col-sm-7" style={{ marginTop: '3%', marginLeft: '3%', paddingBottom: '3%' }}>
             <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>Victoria Kurzweg is a designer and developer specializing in branding and content enhancement. She has worked with global brands in luxury fashion and hospitality, as well as startups in Silicon Beach. Victoria works primarily with Sketch and InVision for wireframing and prototyping, and React.js and Node.js for building responsive websites and applications.</p>
             <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>With a background in writing, Victoria approaches her work with an editorial eye and an appreciation for good storytelling. She is deeply influenced by print and loves working on projects that encompass multiple mediums.</p>
             <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginTop: '2%', marginBottom: '5%'}}>Born in New Orleans, Victoria has a master's degree in history of international relations from the London School of Economics. Her interests include food and drink, fashion, travel and contemporary art.</p>
