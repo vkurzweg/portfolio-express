@@ -406,6 +406,10 @@ export class Grid extends React.Component {
             </div>
             <div className="col-sm-6">
               <div style={{ width: '95%', margin: '0 auto' }}>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenge</p>
+                <p>Casey Ahern is a country music singer and musician from Southern California. Having recently moved to Nashville, Casey wanted a website to help promote her music among fans, booking agents, and potential collaborators. The new site needed to be easy to update with new music and show schedules.</p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solution</p>
+                <p>In order to make it as easy as possible for Casey to keep her site updated, we opted for a customized Squarespace site with social media and music platform integration.</p>
                 <p style={{ fontSize: '16px', fontWeight: 'bold', fontStyle: 'italic', textAlign: 'center', marginTop: '5%', padding: '3%' }}>Currently in development!</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Technologies</p>
                 <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
@@ -527,9 +531,10 @@ export class Grid extends React.Component {
               <div className="col-sm-6" style={{ padding: '3%' }}>
                 <div style={{ width: '95%', margin: '0 auto' }}>
                   <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenges</p>
-                  <p></p>
+                  <p>With hundreds of properties in the EMEA region and more in the pipeline, Hilton Worldwide faced a number of challenges to its success in ecommerce. Improving organic search presence for new and existing properties in Hilton’s portfolio of brands - including Waldorf Astoria, Conrad and DoubleTree, among others - was crucial to its digital strategy.</p>
+                  <p style={{ marginTop: '2%' }}>Having multiple hotels in London, Dubai, Istanbul and other major cities in the region, Hilton needed to ensure that its keyword targets were specific enough to maximize visibility for individual hotels in the same market. Site content then needed to be optimized according to those keyword selections, and updated to include information about renovations and new hotel openings.</p>
                   <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solutions</p>
-                  <p></p>
+                  <p>Working with international search marketing agency Luau Group, we selected keyword targets for 110 properties based on search volume data, hotel location, brand, and amenities. We then incorporated the new targets into metadata (page titles and descriptions) of most-visited pages for each property. In order to update body copy for new and renovated properties, we also surveyed hotel managers in Africa and the Middle East. We worked closely with ecommerce managers to ensure accuracy and adherence to brand guidelines, then submitted all content for approval by Hilton’s content team in Glasgow. The result of the content overhaul was a 60:1 return on spend.</p>
                   <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Technologies</p>
                   <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                     <p>HTML</p>
@@ -537,7 +542,6 @@ export class Grid extends React.Component {
                     <p>Google AdWords</p>
                   </div>
                 </div>
-                <a href="#" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '80%', margin: '0 auto', padding: '3%', textAlign: 'center' }}>VISIT</button></a>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 const LIGHTBOX_IMAGE_SET_HILTON = [
   {
-    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1496534239/screenshot_calendonian.png',
-    caption: 'SEO + Content Enhancement for Waldorf Astoria & other brands in the Hilton Worldwide portfolio',
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1511215646/screenshots_hilton.png',
+    caption: 'A few of the Hilton Worldwide EMEA properties included in content and metadata rewrite projects.',
   },
 
 ]
