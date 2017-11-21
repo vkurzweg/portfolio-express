@@ -447,9 +447,10 @@ export class Grid extends React.Component {
             <div className="col-sm-7">
               <div style={{ width: '95%', margin: '0 auto' }}>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenges</p>
-                <p></p>
+                <p>An early-stage startup based in Santa Monica, Eventmakr began 2016 with a name and a vision: an app that would enable users to plan and pay for every aspect of an event - party rentals, catering, music, flowers, etc. - on one platform. VK had developed a landing page, email templates, and other digital assets for Eventmakr in late 2015, and the startup had attracted enough interest from investors to fund a minimum viable product (MVP).</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solutions</p>
-                <p></p>
+                <p>As the first designer and developer hired by Eventmakr, VK took the lead in organizing the design and development of the MVP application. Working closely with the founder, we translated her ideas and guidelines into low-fidelity wireframes, which we then edited and organized into a user flow. Next, we created high-fidelity wireframes and a clickable prototype that became the jumping-off point for development.</p>
+                <p style={{ marginTop: '2%' }}>VK recruited an additional developer to help select the technologies (Node.js and React + Redux) and build the MVP application. After three months, Eventmakr had a working proof of concept with a real-time chat feature, secure payment system, and responsive user interface.</p>
                 <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Technologies</p>
                 <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
                   <p>Node.js + Express</p>
