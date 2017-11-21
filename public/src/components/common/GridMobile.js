@@ -18,6 +18,7 @@ import GALLERY_IMAGE_SET_OTHER from '../../data/GalleryOther';
 import LIGHTBOX_IMAGE_SET_HILTON from '../../data/LightboxHilton';
 import GALLERY_IMAGE_SET_HILTON from '../../data/GalleryHilton';
 
+
 const StyledGridTile = styled(GridTile)`
   &:hover {
     outline-style: outset;
