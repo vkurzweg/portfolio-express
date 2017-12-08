@@ -87,7 +87,7 @@ const tilesData = [
     s1: 'Brand Strategy',
     s2: 'Search Engine Optimization',
     s3: 'Art + Creative Direction',
-    s4: 'Copywriting (Print + Ecommerce)',
+    s4: 'Copywriting',
   }, {
     img: 'screenshot_sbgl',
     title: 'silicon beach guitar',
@@ -300,12 +300,19 @@ export class Grid extends React.Component {
               key={tile.img}
               onClick={this.showModal.bind(this, idx)}
             >
-              <TileCopy>
-                <h3 style={{ letterSpacing: '2px', color: '#C2C979', fontSize: '30px', textAlign: 'center', fontFamily: 'Oswald', marginTop: '5%' }}>{tile.title}</h3>
-                <p style={{ fontSize: '18px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', marginTop: '4%' }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s1}</p>
-                <p style={{ fontSize: '18px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s2}</p>
-                <p style={{ fontSize: '18px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s3}</p>
-                <p style={{ fontSize: '18px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s4}</p>
+              <TileCopy className="container">
+                <div className="row">
+                  <div className="col-sm-9">
+                    <h3 style={{ letterSpacing: '2px', color: '#C2C979', fontSize: '30px', textAlign: 'center', fontFamily: 'Oswald', marginTop: '15%' }}>{tile.title}</h3>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', marginTop: '4%' }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s1}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s2}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s3}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s4}</p>
+                  </div>
+                  <div className="col-sm-3">
+                    <Image style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '70%' }} cloudName="kurzweg" publicId="play_green" alt="play button" quality="auto" responsive />
+                  </div>
+                </div>
               </TileCopy>
               <StyledImage style={{ height: '100%' }} cloudName="kurzweg" publicId={tile.img} quality="auto" responsive />
             </StyledGridTile>
