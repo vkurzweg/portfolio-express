@@ -69,7 +69,8 @@ const styles = {
     flexWrap: 'wrap',
     overflowX: 'auto',
     margin: '0 auto',
-    marginBottom: '5%'
+    marginBottom: '5%',
+    cursor: 'pointer',
   },
 };
 
