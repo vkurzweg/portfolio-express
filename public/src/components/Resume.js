@@ -21,7 +21,8 @@ export default class Resume extends React.Component {
         <MediaQuery maxWidth={767}>
             <NavMobile />
             <Image cloudName="kurzweg" publicId="palms" quality="auto" responsive style={{ width: '100%', marginTop: '10%' }} />
-            <Image cloudName="kurzweg" publicId="ResumeNovember2017-2" responsive style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '3%', paddingBottom: '10%'}} />
+            <Image cloudName="kurzweg" publicId="ResumeDec1" responsive style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '3%', paddingBottom: '10%'}} />
+            <Image cloudName="kurzweg" publicId="ResumeDec2" responsive style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '3%', paddingBottom: '10%'}} />
         </MediaQuery>
       </div>
     );
