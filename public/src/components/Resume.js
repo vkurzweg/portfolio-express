@@ -16,7 +16,8 @@ export default class Resume extends React.Component {
           <div className="resume-image">
             <Nav />
           </div>
-          <Image cloudName="kurzweg" publicId="ResumeNovember2017-2" responsive style={{ display: 'block', margin: '0 auto', width: '80%', paddingTop: '3%', paddingBottom: '3%'}} />
+          <Image cloudName="kurzweg" publicId="ResumeDec1" responsive style={{ display: 'block', margin: '0 auto', width: '80%', paddingTop: '3%', paddingBottom: '3%'}} />
+          <Image cloudName="kurzweg" publicId="ResumeDec2" responsive style={{ display: 'block', margin: '0 auto', width: '80%', paddingTop: '3%', paddingBottom: '3%'}} />
         </MediaQuery>
         <MediaQuery maxWidth={767}>
             <NavMobile />
