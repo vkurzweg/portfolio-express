@@ -41,7 +41,7 @@ export class Bio extends React.Component {
         <div className="row" style={{ width: '100%', margin: '0 auto' }}>
           <div className="col-sm-6" style={{ display: 'block', margin: '0 auto' }}>
             <h1 style={{ color: 'white', fontSize: '30px', letterSpacing: '4.5px', marginLeft: '2%', fontFamily: 'Oswald', paddingTop: '3%', margin: '0 auto', textAlign: 'center', marginBottom: '1%', paddingTop: '3%' }}><span style={{ color: '#3D8EE2' }}>about</span> <br /></h1>
-            <Image cloudName="kurzweg" publicId="headshot_new" quality="auto" responsive alt="Victoria Kurzweg" style={{ width: '70%', paddingTop: '5%', display: 'block', margin: '0 auto'}} />
+            <Image cloudName="kurzweg" publicId="headshot_edit" quality="auto" responsive alt="Victoria Kurzweg" style={{ width: '70%', paddingTop: '5%', display: 'block', margin: '0 auto'}} />
           </div>
           <div className="col-sm-6" style={{ marginTop: '8%', marginLeft: '3%', paddingBottom: '3%' }}>
             <p style={{ fontSize: '14px', textAlign: 'justify', marginRight: '7%', marginLeft: '7%', marginBottom: '3%' }}>Victoria Kurzweg is a designer and developer specializing in branding and content enhancement. She has worked with global brands in luxury fashion and hospitality, as well as startups in Silicon Beach. Victoria works primarily with Sketch and InVision for wireframing and prototyping, and React.js and Node.js for building responsive websites and applications.</p>
