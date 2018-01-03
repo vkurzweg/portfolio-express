@@ -56,12 +56,17 @@ const StyledGridTileHead = styled(GridTile)`
   padding-bottom: 5%;
 `;
 
+const imageUrl = 'http://res.cloudinary.com/kurzweg/image/upload/v1501196711/cherryblossom_bw.jpg';
+
 const styles = {
   root: {
     display: 'flex',
     flexWrap: 'wrap',
     paddingTop: '1%',
-    backgroundColor: 'black',
+    backgroundImage: `url(${imageUrl})`,
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    backgroundSize: 'cover',
   },
   gridList: {
     width: '85%',
