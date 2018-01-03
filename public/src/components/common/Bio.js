@@ -39,10 +39,10 @@ export class Bio extends React.Component {
     (this.props.isFormActive) ? display = 'block' : display = 'none';
     return (
       <div id="bio" className="bio-image" style={{ width: '100%', textAlign: 'center', fontSize: '16px', position: 'absolute' }}>
-        <div style={{ fontFamily: 'Helvetica', fontSize: '18px', width: '60%', letterSpacing: '2px', lineHeight: '2', float: 'right', marginTop: '5%' }}>
+        <div style={{ fontFamily: 'Helvetica', fontSize: '18px', width: '60%', letterSpacing: '1px', lineHeight: '2', float: 'right', marginTop: '5%' }}>
           <h3 style={{ fontFamily: 'Oswald', fontSize: '40px', color: '#3D8EE2', textAlign: 'center', marginBottom: '5%' }}>about</h3>
           <p style={{ textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>Victoria Kurzweg is a designer and developer specializing in branding and content enhancement. She has worked with global fashion and hospitality brands, as well as startups in Silicon Beach.</p>
-          <p style={{ textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>With a <A href="/resume" target="blank">background</A> in writing, Victoria approaches her work with an editorial eye and an appreciation for good storytelling.</p>
+          <p style={{ textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>With a <A href="/resume" target="blank">background</A> in content writing and strategy, Victoria approaches her work with an editorial eye and an appreciation for good storytelling.</p>
           <p style={{ textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '6%' }}>Victoria was born in New Orleans and graduated with a master's degree in history of international relations from the London School of Economics.</p>
           <button onClick={this.showModal} style={{ textDecoration: 'none', backgroundColor: '#108EE9', color: '#C4C882', width: '40%', height: '3.5em', margin: '0 auto', border: 'none', textTransform: 'uppercase', letterSpacing: '1px', borderRadius: '2px', fontSize: '22px', fontWeight: 'bold' }}>Let's talk</button>
         </div>
