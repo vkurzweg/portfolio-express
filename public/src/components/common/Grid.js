@@ -62,7 +62,7 @@ const styles = {
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    paddingTop: '1%',
+    paddingTop: '5%',
     backgroundImage: `url(${imageUrl})`,
     backgroundPosition: 'center',
     backgroundAttachment: 'fixed',
@@ -280,7 +280,7 @@ export class Grid extends React.Component {
     const childElementsEmkr = GALLERY_IMAGE_SET_EMKR.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
-          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="450" quality="auto" crop="scale" responsive />
+          <Image style={{ display: 'block', margin: '0 auto', marginTop: '30%' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="450" quality="auto" crop="scale" responsive />
         </div>
       );
     });
@@ -294,7 +294,7 @@ export class Grid extends React.Component {
     const childElementsHilton = GALLERY_IMAGE_SET_HILTON.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
-          <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="450" quality="auto" crop="scale" responsive />
+          <Image style={{ display: 'block', margin: '0 auto', marginTop: '30%' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="450" quality="auto" crop="scale" responsive />
         </div>
       );
     });
@@ -444,7 +444,7 @@ export class Grid extends React.Component {
             <div className="col-sm-5">
               <div style={{ width: '90%', margin: '0 auto' }}>
                 {childElementsEmkr}
-                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%' }}><em>Click for more images</em></p>
+                <p style={{ textAlign: 'center', fontSize: '24px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click for more images</p>
                 <Lightbox
                   currentImage={this.state.currentImage}
                   isOpen={this.state.lightboxIsOpen}
@@ -529,7 +529,7 @@ export class Grid extends React.Component {
             <div className="col-sm-5">
               <div style={{ width: '90%', margin: '0 auto' }}>
                 {childElementsHilton}
-                <p style={{ textAlign: 'center', fontSize: '14px', marginBottom: '1%', marginTop: '2%' }}><em>Click for more images</em></p>
+                <p style={{ textAlign: 'center', fontSize: '24px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click for more images</p>
                 <Lightbox
                   currentImage={this.state.currentImage}
                   isOpen={this.state.lightboxIsOpen}
