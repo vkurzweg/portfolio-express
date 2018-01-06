@@ -39,7 +39,7 @@ export class Bio extends React.Component {
     (this.props.isFormActive) ? display = 'block' : display = 'none';
     return (
       <div id="bio" className="bio-image" style={{ width: '100%', textAlign: 'center', fontSize: '16px', position: 'absolute' }}>
-        <div style={{ fontFamily: 'Helvetica', fontSize: '18px', width: '60%', letterSpacing: '1px', lineHeight: '2', float: 'right', marginTop: '5%' }}>
+        <div style={{ fontFamily: 'Helvetica', fontSize: '18px', width: '60%', letterSpacing: '1px', lineHeight: '2', float: 'right', marginTop: '10%' }}>
           <h3 style={{ fontFamily: 'Oswald', fontSize: '40px', color: '#3D8EE2', textAlign: 'center', marginBottom: '5%' }}>about</h3>
           <p style={{ textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>Victoria Kurzweg is a designer and developer specializing in branding and content enhancement. She has worked with global fashion and hospitality brands, as well as startups in Silicon Beach.</p>
           <p style={{ textAlign: 'justify', marginRight: '10%', marginLeft: '10%', marginBottom: '3%' }}>With a <A href="/resume" target="blank">background</A> in content writing and strategy, Victoria approaches her work with an editorial eye and an appreciation for good storytelling.</p>

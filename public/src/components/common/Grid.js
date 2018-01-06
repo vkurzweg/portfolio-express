@@ -479,7 +479,6 @@ export class Grid extends React.Component {
                   <p>Photoshop</p>
                   <p>Sketch</p>
                 </div>
-              <a href="http://app.eventmakr.com/" target="blank" style={{ textDecoration: 'none', fontWeight: 'bold', display: 'block', margin: '0 auto', textAlign: 'center' }}><button className="btn btn-primary" style={{ backgroundColor: '#108EE9', border: 'none', width: '30%', margin: '0 auto', padding: '1%', textAlign: 'center' }}>VISIT</button></a>
               </div>
             </div>
           </div>
