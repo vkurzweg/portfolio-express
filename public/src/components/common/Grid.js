@@ -312,10 +312,10 @@ export class Grid extends React.Component {
                 <div className="row">
                   <div className="col-sm-9">
                     <h3 style={{ letterSpacing: '2px', color: '#C2C979', fontSize: '30px', textAlign: 'center', fontFamily: 'Oswald', marginTop: '15%' }}>{tile.title}</h3>
-                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', marginTop: '4%' }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s1}</p>
-                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s2}</p>
-                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s3}</p>
-                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}><Image style={{ width: '15px', marginLeft: '35px', marginRight: '10px', marginBottom: '1%' }} cloudName="kurzweg" publicId="logo_edit_white" quality="auto" crop="scale" responsive />{tile.s4}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', marginTop: '4%' }}>+{tile.s1}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>+{tile.s2}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>+{tile.s3}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>+{tile.s4}</p>
                   </div>
                   <div className="col-sm-3">
                     <Image style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '70%' }} cloudName="kurzweg" publicId="play_green" alt="play button" quality="auto" responsive />
