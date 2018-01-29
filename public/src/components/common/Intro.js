@@ -18,10 +18,16 @@ export class Intro extends React.Component {
   render() {
 
     return (
-      <div className="container" style={{ width: '100%', backgroundColor: 'black', color: 'white', padding: '1%', fontSize: '16px' }}>
-        <h1 style={{ color: 'white', fontSize: '50px', letterSpacing: '4px', fontFamily: 'Oswald', paddingTop: '3%', width: '60%', margin: '0 auto' }}><span style={{ color: '#3D8EE2' }}>responsive website</span> <br /></h1>
-        <h2 style={{ color: '#C2C979', fontSize: '50px', letterSpacing: '4px', fontFamily: 'Oswald', paddingTop: '1%', width: '60%', margin: '0 auto', textAlign: 'center' }}>creation + iteration</h2>
-        <h3 style={{ color: 'white', fontFamily: 'Share', fontSize: '26px', padding: '1em', letterSpacing: '1px', width: '60%', margin: '0 auto', marginTop: '2%', lineHeight: '1.5em' }}>Engaging, on-brand websites that look great on mobile + desktop</h3>
+      <div className="container" style={{ width: '100%', backgroundColor: 'black', padding: '1%', fontSize: '16px' }}>
+        <div className="row">
+          <div className = "col-sm-6">
+            <h1 style={{ fontSize: '48px', letterSpacing: '4px', fontFamily: 'Oswald', textAlign: 'right', marginTop: '5%', marginBottom: '2%' }}><span style={{ color: '#3D8EE2' }}>Websites + Landing Pages</span></h1>
+            <h2 style={{ color: '#C2C979', fontSize: '48px', letterSpacing: '4px', fontFamily: 'Oswald', textAlign: 'right', marginTop: '3%' }}>Mobile + Desktop</h2>
+          </div>
+          <div className = "col-sm-6">
+            <h3 style={{ color: 'white', fontFamily: 'Oswald', fontSize: '26px', letterSpacing: '3px', width: '90%', margin: '0 auto', marginTop: '3%', marginBottom: '5%', lineHeight: '2em' }}>+ Engaging UIs<br/> + On-brand design<br />+ Copy that converts</h3>
+          </div>
+        </div>
       </div>
     );
 

@@ -267,6 +267,7 @@ export class Grid extends React.Component {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
           <Image style={{ display: 'block', margin: '0 auto'}} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
+          <p style={{ textAlign: 'center', fontSize: '24px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click for more images</p>
         </div>
       );
     });
@@ -274,6 +275,7 @@ export class Grid extends React.Component {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} >
           <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
+          <p style={{ textAlign: 'center', fontSize: '24px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click for more images</p>
         </div>
       );
     });
