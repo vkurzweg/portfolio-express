@@ -16,14 +16,14 @@ export default class Resume extends React.Component {
           <div className="resume-image">
             <Nav />
           </div>
-          <Image cloudName="kurzweg" publicId="ResumeGen-1" responsive style={{ display: 'block', margin: '0 auto', width: '80%', paddingTop: '3%', paddingBottom: '3%'}} />
-          <Image cloudName="kurzweg" publicId="ResumeGen-2" responsive style={{ display: 'block', margin: '0 auto', width: '80%', paddingTop: '3%', paddingBottom: '3%'}} />
+          <Image cloudName="kurzweg" publicId="resume_feb1" responsive style={{ display: 'block', margin: '0 auto', width: '80%', paddingTop: '3%', paddingBottom: '3%'}} />
+          <Image cloudName="kurzweg" publicId="resume_feb2" responsive style={{ display: 'block', margin: '0 auto', width: '80%', paddingTop: '3%', paddingBottom: '3%'}} />
         </MediaQuery>
         <MediaQuery maxWidth={767}>
             <NavMobile />
             <Image cloudName="kurzweg" publicId="palms" quality="auto" responsive style={{ width: '100%', marginTop: '10%' }} />
-            <Image cloudName="kurzweg" publicId="ResumeGen-1" responsive style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '3%', paddingBottom: '10%'}} />
-            <Image cloudName="kurzweg" publicId="ResumeGen-2" responsive style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '3%', paddingBottom: '10%'}} />
+            <Image cloudName="kurzweg" publicId="resume_feb1" responsive style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '3%', paddingBottom: '10%'}} />
+            <Image cloudName="kurzweg" publicId="resume_feb2" responsive style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '3%', paddingBottom: '10%'}} />
         </MediaQuery>
       </div>
     );

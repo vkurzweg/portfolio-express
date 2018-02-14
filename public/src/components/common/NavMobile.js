@@ -41,7 +41,7 @@ export default class Nav extends React.Component {
                       <a style={{ padding: '5%' }} href="https://www.linkedin.com/in/victoriakurzweg/" target="blank"><img src="/media/linkedin.png" style={{ width: '20px', paddingRight: '10%' }} /></a>
                       <a style={{ padding: '5%' }} href="https://www.instagram.com/victoria.kurzweg/" target="blank"><img src="/media/instagram.png" style={{ width: '20px' }} /></a>
                     </div>
-    const brand = <a href="/" style={{ color: 'white', fontFamily: 'Oswald', letterSpacing: '2px', fontSize: '20px' }}>vk.digital <Image style={{ width: '30px', marginLeft: '-10px', marginTop: '-3px' }} cloudName="kurzweg" publicId="logot_edit" quality="auto" crop="scale" responsive /></a>
+    const brand = <a href="/" style={{ color: 'white', fontFamily: 'Oswald', letterSpacing: '2px', fontSize: '20px' }}>vk.digital </a>
     return (
       <div style={{ position: 'fixed', width: '100%', zIndex: '10' }}>
         <AppBar

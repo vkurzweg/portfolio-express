@@ -62,7 +62,8 @@ const styles = {
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    paddingTop: '5%',
+    paddingTop: '15%',
+    paddingBottom: '8%',
     backgroundImage: `url(${imageUrl})`,
     backgroundPosition: 'center',
     backgroundAttachment: 'fixed',

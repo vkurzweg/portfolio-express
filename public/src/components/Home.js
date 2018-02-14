@@ -39,10 +39,7 @@ export class Home extends React.Component {
     return (
       <div>
         <MediaQuery minWidth={768}>
-          <div className="main-image">
-            <Nav />
-          </div>
-          <Intro />
+          <Nav />
           <Grid />
           <div className="third-image">
             <Bio
@@ -54,7 +51,6 @@ export class Home extends React.Component {
         <MediaQuery maxWidth={767}>
           <NavMobile />
           <Image cloudName="kurzweg" publicId="palmtrees" quality="auto" responsive style={{ width: '100%', marginTop: '10%' }} />
-          <IntroMobile />
           <GridMobile />
           <BioMobile
             toggleForm={this.toggleForm}
