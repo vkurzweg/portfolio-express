@@ -28,6 +28,7 @@ const StyledGridTile = styled(GridTile)`
 
 const StyledImage = styled(Image)`
   width: 100%;
+  vertical-align: middle;
   &:hover {
     opacity: 0;
     cursor: pointer;
@@ -38,7 +39,7 @@ const TileCopy = styled.div`
   position: absolute;
   width: 100%;
   margin: 0 auto;
-  height: 275px;
+  height: 265px;
   opacity: 0;
   background-color: black;
   &:hover {
@@ -82,12 +83,12 @@ const styles = {
 
 const tilesData = [
   {
-    img: 'aloha_screenshot',
-    title: 'aloha brothers surf',
+    img: 'screenshot_sangbleu',
+    title: 'sang bleu london',
     s1: 'Responsive Web Development',
-    s2: 'Web + UI Design',
-    s3: 'Brand Strategy',
-    s4: 'Workflow Optimization',
+    s2: 'UX + SEO Auditing',
+    s3: 'Content Creation',
+    s4: 'Web Design',
   }, {
     img: 'screenshot_bookmarc',
     title: 'marc jacobs',
@@ -95,6 +96,13 @@ const tilesData = [
     s2: 'Search Engine Optimization',
     s3: 'Art + Creative Direction',
     s4: 'Copywriting',
+  }, {
+    img: 'aloha_screenshot',
+    title: 'aloha brothers surf',
+    s1: 'Responsive Web Development',
+    s2: 'Web + UI Design',
+    s3: 'Brand Strategy',
+    s4: 'Workflow Optimization',
   }, {
     img: 'screenshot_sbgl',
     title: 'silicon beach guitar',
@@ -137,6 +145,7 @@ export class Grid extends React.Component {
       visible4: false,
       visible5: false,
       visible6: false,
+      visible7: false,
       lightboxIsOpen: false,
       currentImage: 0,
     }
@@ -148,6 +157,7 @@ export class Grid extends React.Component {
     this.closeModal4 = this.closeModal4.bind(this);
     this.closeModal5 = this.closeModal5.bind(this);
     this.closeModal6 = this.closeModal6.bind(this);
+    this.closeModal7 = this.closeModal7.bind(this);
     this.closeLightbox = this.closeLightbox.bind(this);
     this.gotoNext = this.gotoNext.bind(this);
     this.gotoPrevious = this.gotoPrevious.bind(this);
@@ -182,10 +192,14 @@ export class Grid extends React.Component {
       this.setState({
         visible5: true,
       })}
-      if (idx === 6){
-      this.setState({
-        visible5: true,
-      })}
+    if (idx === 6){
+    this.setState({
+      visible6: true,
+    })}
+    if (idx === 7){
+    this.setState({
+      visible7: true,
+    })}
   }
 
   closeModal0() {
@@ -227,6 +241,12 @@ export class Grid extends React.Component {
   closeModal6() {
     this.setState({
       visible6: false,
+    })
+  }
+
+  closeModal7() {
+    this.setState({
+      visible7: false,
     })
   }
 
@@ -303,7 +323,7 @@ export class Grid extends React.Component {
     });
     return (
       <div style={styles.root}>
-        <GridList style={styles.gridList} cols={2} cellHeight={275}>
+        <GridList style={styles.gridList} cols={2} cellHeight={265}>
           {tilesData.map((tile, idx) => (
             <StyledGridTile
               key={tile.img}
@@ -311,23 +331,20 @@ export class Grid extends React.Component {
             >
               <TileCopy className="container">
                 <div className="row">
-                  <div className="col-sm-9">
-                    <h3 style={{ letterSpacing: '2px', color: '#C2C979', fontSize: '30px', textAlign: 'center', fontFamily: 'Oswald', marginTop: '15%' }}>{tile.title}</h3>
-                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', marginTop: '4%' }}>+{tile.s1}</p>
-                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>+{tile.s2}</p>
-                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>+{tile.s3}</p>
-                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>+{tile.s4}</p>
-                  </div>
-                  <div className="col-sm-3">
-                    <Image style={{ display: 'block', margin: '0 auto', width: '90%', paddingTop: '70%' }} cloudName="kurzweg" publicId="play_green" alt="play button" quality="auto" responsive />
+                  <h3 style={{ marginLeft: '10%', letterSpacing: '2px', color: '#C2C979', fontSize: '36px', fontFamily: 'Oswald', marginTop: '7%' }}>{tile.title}</h3>
+                  <div style={{ marginLeft: '30%', marginTop: '5%' }}>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', marginTop: '4%' }}>{tile.s1}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>{tile.s2}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>{tile.s3}</p>
+                    <p style={{ fontSize: '14px', padding: '1%', letterSpacing: '2px', textTransform: 'uppercase', color: 'white', fontFamily: 'Josefin Sans', }}>{tile.s4}</p>
                   </div>
                 </div>
               </TileCopy>
-              <StyledImage style={{ height: '100%' }} cloudName="kurzweg" publicId={tile.img} quality="auto" responsive />
+              <StyledImage style={{ }} cloudName="kurzweg" publicId={tile.img} quality="auto" responsive />
             </StyledGridTile>
           ))}
         </GridList>
-        <Modal title="case study: Silicon Beach Guitar" visible={this.state.visible2} footer={null} onCancel={this.closeModal2} style={{ top: 50 }}>
+        <Modal title="case study: Silicon Beach Guitar" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
           <div className="container">
             <div className="row">
               <div className="col-sm-4">
@@ -369,7 +386,7 @@ export class Grid extends React.Component {
             </div>
           </div>
         </Modal>
-        <Modal title="case study: Aloha Brothers" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
+        <Modal title="case study: Aloha Brothers" visible={this.state.visible2} footer={null} onCancel={this.closeModal2} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-4">
@@ -411,7 +428,7 @@ export class Grid extends React.Component {
           </div>
         </div>
         </Modal>
-        <Modal title="case study: Casey Ahern" visible={this.state.visible3} footer={null} onCancel={this.closeModal3} style={{ top: 50 }}>
+        <Modal title="case study: Casey Ahern" visible={this.state.visible4} footer={null} onCancel={this.closeModal4} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-4">
@@ -441,7 +458,36 @@ export class Grid extends React.Component {
           </div>
         </div>
         </Modal>
-        <Modal title="case study: Eventmakr" visible={this.state.visible5} footer={null} onCancel={this.closeModal5} style={{ top: 50 }}>
+        <Modal title="case study: Sang Bleu" visible={this.state.visible0} footer={null} onCancel={this.closeModal0} style={{ top: 50 }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-4">
+                <div>
+                  <Image style={{ display: 'block', margin: '0 auto' }} cloudName="kurzweg" publicId="sangbleu_wireframe1" width="450" quality="auto" crop="scale" responsive />
+                </div>
+            </div>
+            <div className="col-sm-8" style={{ paddingRight: '5%' }}>
+              <div style={{ width: '75%', margin: '0 auto' }}>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Challenge</p>
+                <p>Created by Swiss artist Maxime Plescia-Büchi, Sang Bleu began as an art and culture magazine in 2006. Having since evolved into a streetwear line, typeface, and creative agency, in 2018 the brand's founder wanted to refocus on its signature offering: tattoos. Sang Bleu and its tattoo artists had hundreds of thousands of followers on social media but its web presence was minimal.</p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '3%' }}>Solution</p>
+                <p>Develop a unique website for each studio -- London, Zurich, and (coming soon) Los Angeles -- featuring original content to draw in visitors from social media and organic search.</p>
+                <p style={{ fontSize: '16px', fontWeight: 'bold', fontStyle: 'italic', textAlign: 'center', marginTop: '2%', padding: '3%' }}>Currently in development!</p>
+                <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Technologies</p>
+                <div style={{ width: '90%', margin: '0 auto', columnCount: '2', marginBottom: '5%' }}>
+                  <p>Node.js + Express</p>
+                  <p>NPM</p>
+                  <p>React + Redux</p>
+                  <p>HTML, CSS/SCSS & JavaScript</p>
+                  <p>Styled Components</p>
+                  <p>Bootstrap</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </Modal>
+        <Modal title="case study: Eventmakr" visible={this.state.visible6} footer={null} onCancel={this.closeModal6} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-5">
@@ -525,7 +571,7 @@ export class Grid extends React.Component {
           </div>
          </div>
         </Modal>
-        <Modal title="case study: Hilton Worldwide EMEA" visible={this.state.visible4} footer={null} onCancel={this.closeModal4} style={{ top: 50 }}>
+        <Modal title="case study: Hilton Worldwide EMEA" visible={this.state.visible5} footer={null} onCancel={this.closeModal5} style={{ top: 50 }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-5">
@@ -588,4 +634,13 @@ export default Grid;
 
 // <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Challenges</p>
 // <p style={{ fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center', padding: '1%' }}>Solutions</p>
+
+// const childElementsSangBleu = GALLERY_IMAGE_SET_SANGBLEU.map((element, idx) => {
+//   return (
+//       <div key={idx} onClick={() => this.openLightbox(idx)} >
+//         <Image style={{ display: 'block', margin: '0 auto'}} cloudName="kurzweg" publicId={element.src} alt={element.alt} width="250" quality="auto" crop="scale" responsive />
+//         <p style={{ textAlign: 'center', fontSize: '24px', letterSpacing: '1px', marginBottom: '3%', marginTop: '2%', fontFamily: 'Oswald', textTransform: 'lowercase', color: '#3D8EE2' }}>Click for more images</p>
+//       </div>
+//     )
+// })
 
